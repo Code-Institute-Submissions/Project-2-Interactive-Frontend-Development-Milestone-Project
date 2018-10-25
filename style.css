@@ -1,0 +1,85 @@
+.navbar{
+    background-color: blue;
+    color:  white;
+    margin: 0px
+}
+.navbar-nav{
+    background-color: blue;
+}
+
+.header{
+ 
+}
+
+.footer{
+    min-height: 200px
+}
+
+.body{
+    
+}
+
+@media screen and (min-width: 768px){
+.destinationcontainer{
+    border: solid;
+    padding: 10px;
+    border-radius: 100px;
+    min-height: 500px;
+    background-color: white;
+    }
+}
+
+@media screen and (max-width: 768px){
+.mobile-destinationcontainer{
+    min-height: 500px;
+    background-color: white;
+    
+}
+}
+
+@media screen and (min-width: 768px){
+.mapscontainer{
+    border: solid;
+    min-height: 350px;
+    margin: 100px;
+    }
+}
+
+@media screen and (max-width: 768px){
+.mobile-mapscontainer{
+    border: solid;
+    min-height: 350px;
+    margin: 100px;
+}
+}
+
+
+
+h1{
+   text-align: center; 
+}
+
+@media screen and (min-width: 768px){
+.beachholiday-backgroundimage{
+    background: url("/images/beachholiday.jpg") no-repeat center top;
+    min-height: 800px;
+    background-size: cover;
+    opacity: 70;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+
+}
+}
+
+@media screen and (max-width: 768px){
+.mobile-background{
+    background: url("/images/beachholiday.jpg") no-repeat center top;
+    min-height: 800px;
+        padding-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+}
+}
