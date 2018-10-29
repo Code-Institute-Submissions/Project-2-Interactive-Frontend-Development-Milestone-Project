@@ -33,6 +33,7 @@
 .mobile-destinationcontainer{
     min-height: 500px;
     background-color: white;
+    padding-top: 5px;
     
 }
 }
@@ -41,7 +42,7 @@
 .mapscontainer{
     border: solid;
     min-height: 350px;
-    margin: 100px;
+    margin: 50px;
     }
 }
 
@@ -49,7 +50,7 @@
 .mobile-mapscontainer{
     border: solid;
     min-height: 350px;
-    margin: 100px;
+    margin: 20px;
 }
 }
 
@@ -61,8 +62,8 @@ h1{
 
 @media screen and (min-width: 768px){
 .beachholiday-backgroundimage{
-    background: url("/images/beachholiday.jpg") no-repeat center top;
-    min-height: 800px;
+    background: url("/assets/images/beachholiday.jpg") no-repeat center top;
+    min-height: 1000px;
     background-size: cover;
     opacity: 70;
     padding-top: 100px;
@@ -75,11 +76,12 @@ h1{
 
 @media screen and (max-width: 768px){
 .mobile-background{
-    background: url("/images/beachholiday.jpg") no-repeat center top;
+    background: url("/assets/images/beachholiday.jpg") no-repeat center top;
+    background-size: cover;
     min-height: 800px;
-        padding-top: 100px;
+    padding-top: 100px;
     padding-left: 0px;
     padding-right: 0px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 }
