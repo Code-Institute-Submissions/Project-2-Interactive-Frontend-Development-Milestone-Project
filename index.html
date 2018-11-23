@@ -5,86 +5,87 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <title>Travel</title>
+        <title class="title">SimpleTravel</title>
+        
     </head>
     <body class="body">
         <header class="header">
           <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Travel</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SimpleTravel</a>
+              </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#europe">Europe <span class="sr-only">(current)</span></a></li>
+                <li><a href="#northamerica">North America</a></li>
+                <li><a href="#southamerica">South America</a></li>
+                <li><a href="#africa">Africa</a></li>
+                <li><a href="#australia">Australia</a></li>
+                <li><a href="#oceania">Oceania</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
         </header>
-        <section class="beachholiday-backgroundimage mobile-background">
+        <section class="beachholiday-backgroundimage beachholiday-mobile-backgroundimage">
             <div>
                 <div class="row destinationcontainer mobile-destinationcontainer" >
                     <h1>Destination search</h1>
+                      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
                     <div id="map"class="col-xs col-sm col-md col-lg  mapscontainer mobile-mapscontainer"></div>
                 </div>
             </div>
-            
+           </section>
+           <section class="europe-backgroundimage europe-mobile-backgroundimage" id="europe"><h1>Europe</h1></section>
+           <section class="northamerica-backgroundimage northamerica-mobile-backgroundimage"  id="northamerica"><h1>North America</h1></section>
+           <section class="southamerica-backgroundimage southamerica-mobile-backgroundimage"  id="southamerica"><h1>South America</h1></section>
+           <section class="africa-backgroundimage africa-mobile-backgroundimage"  id="africa"><h1>Africa</h1></section>
+           <section class="australia-backgroundimage australia-mobile-backgroundimage"  id="australia"><h1>Australia</h1></section>
+           <section class="oceania-backgroundimage oceania-mobile-backgroundimage"  id="oceania"><h1>Oceania</h1></section>
+           <section id="contact">
+             <div>
+               <h1>Contact</h1>
+             <p class="contact-form">
+               fill out the form below to contact us 
+             </p></div>
+             				  <div class="col-xs-12">
+			    <div class="form-group">
+	           <p class="lead">Personal Details:</p>
+                <input type="text" name="fname" class="form-control" id="fname" placeholder="First Name" required>
+                <input type="text" name="lname" class="form-control" id="lname" placeholder="Last Name" required>
+                <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Comments and Special Request (Optional)"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success center-block btn-lg" value="Go to thankyoubookingpage.html">Submit</button>
+          </div>
 
-        </section>
+             
+           </section>
         <footer class="footer">
             
     </footer>
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&callback=initMap"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
         <script src="/assets/js/maps.js"></script>
 </body>
 </html>

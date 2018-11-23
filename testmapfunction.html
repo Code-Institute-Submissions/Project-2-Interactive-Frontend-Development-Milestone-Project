@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <span class="map-icon map-icon-point-of-interest"></span>
+        <title>Travel</title>
+        
+        
+        
+
+    <link rel="shortcut icon" href="#">
+    
+            <style>
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <div class="container-search">
+                <div id="centersearch">
+
+        <div>
+             Search   
+        </div>
+        <input  id="autocomplete" type="text" placeholder="Start typing here" />
+        
+        
+    <div id="controls">
+      <select id="country">
+        <option value="all">All</option>
+        <option value="au">Australia</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="mx">Mexico</option>
+        <option value="nz">New Zealand</option>
+        <option value="it">Italy</option>
+        <option value="za">South Africa</option>
+        <option value="es">Spain</option>
+        <option value="pt">Portugal</option>
+        <option value="us">U.S.A.</option>
+        <option value="uk" selected>United Kingdom</option>
+      </select>
+    </div>
+    </div>
+    </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>            
+   <div id="placestoggle" class="pac-controls">
+     <div id="places">
+       
+      <input onchange="search()"  type="radio" id="lodging" name="option" checked="checked" disabled />
+      <label for="lodging">Accommodation</label>
+     
+      <input onchange="search()"  type="radio" id="art_gallery" name="option" disabled />
+      <label for="art_gallery">Art Gallery</label>
+           
+      <input onchange="search()"  type="radio" id="museum" name="option" disabled />
+      <label for="museum">Museum</label>
+           
+      <input onchange="search()"  type="radio" id="amusement_park" name="option" disabled />
+      <label for="amusement_park">Amusement Park</label>
+     
+      <input onchange="search()"  type="radio" id="bar" name="option" disabled />
+      <label for="bar">Bars</label>
+           
+      <input onchange="search()"  type="radio" id="restaurant" name="option" disabled />
+      <label for="restaurant">Restaurants</label>
+   </div>
+   </div>
+   <div class="row">
+   <div  class="col-xs col-sm col-md col-lg">
+     
+    <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div id="map" class="mapscontainer mobile-mapscontainer"></div>
+    </div>
+</div>
+    <footer>
+            
+    </footer>
+        <script src="/assets/js/search.js"></script>
+        <script src="/assets/js/nav.js"></script>
+        <script src="testmapfunctions.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

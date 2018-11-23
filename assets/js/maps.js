@@ -6,9 +6,15 @@
             lng: 20.134766
         }
     }); 
+    
+
+        var input = document.getElementById('pac-input');
+
+    var autocomplete = new google.maps.places.Autocomplete(input);        
                    
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                   
+
+           
     var locations = [
          
         { lat: 55.863801, lng: -4.251661 }, //  Glasgow central, Scotland
@@ -25,6 +31,7 @@
         { lat: -33.869531, lng: 151.201544 }  // Sydney, Australia
     ];
     
+    
                    
     var markers = locations.map(function(location, i) {
         return new google.maps.Marker({
@@ -35,4 +42,18 @@
                    
     var markerCluster = new MarkerClusterer(map, markers,
     {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-}
+
+
+
+
+      function search() {
+        var search = {
+
+       } };
+       
+       
+       
+ }
+ 
+ 
+ 
