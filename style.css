@@ -34,6 +34,16 @@ h1{
    margin: 10%;
 }
 
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.travellocationslist{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
      /*------ navbar ------*/
 
 .navbar{
@@ -104,7 +114,6 @@ h1{
     background: url("/assets/images/beachholiday.jpg") no-repeat center top;
     min-height: 1000px;
     background-size: cover;
-    opacity: 70;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
@@ -122,6 +131,7 @@ h1{
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 50px;
+    
 }
 }
 
@@ -132,12 +142,12 @@ h1{
     background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
     min-height: 400px;
     background-size: cover;
-    opacity: 70;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     margin: 5%;
+    background-position-y: bottom;
 }
 }
 
@@ -153,20 +163,29 @@ h1{
     
 }
 }
+@media screen and (min-width: 1200px){
+.europe-extralargebackgroundimage{
+}
+}
 
-/*--- north america background images---*/
+@media screen and (min-width: 1200px){
+.travellocationslist-extralarge{
+}
+}
+
+/*--- North America background images---*/
 
 @media screen and (min-width: 768px){
 .northamerica-backgroundimage{
     background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
     min-height: 400px;
     background-size: cover;
-    opacity: 70;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     margin: 5%;
+    background-position-y: center;
 }
 }
 
@@ -182,19 +201,19 @@ h1{
 }
 }
 
-/*--- south hamerica background images---*/
+/*--- South America background images---*/
 
 @media screen and (min-width: 768px){
 .southamerica-backgroundimage{
     background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
     min-height: 400px;
     background-size: cover;
-    opacity: 70;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     margin: 5%;
+    background-position-y: bottom;
 }
 }
 
@@ -210,14 +229,13 @@ h1{
 }
 }
 
-/*--- africa background images---*/
+/*--- Africa background images---*/
 
 @media screen and (min-width: 768px){
 .africa-backgroundimage{
     background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
     min-height: 400px;
     background-size: cover;
-    opacity: 70;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
@@ -245,12 +263,12 @@ h1{
     background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
     min-height: 400px;
     background-size: cover;
-    opacity: 70;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     margin: 5%;
+    background-position-y: 70%;
 }
 }
 
@@ -273,12 +291,12 @@ h1{
     background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
     min-height: 400px;
     background-size: cover;
-    opacity: 70;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
     margin: 5%;
+    background-position-y: center;
 }
 }
 

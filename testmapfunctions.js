@@ -8,15 +8,19 @@
       var countries = {
         'au': {
           center: {lat: -25.3, lng: 133.8},
-          zoom: 4
+          zoom: 3.6
         },
         'br': {
-          center: {lat: -14.2, lng: -51.9},
-          zoom: 3
+          center: {lat: -15.2, lng: -56.9},
+          zoom: 3.5
         },
         'ca': {
           center: {lat: 62, lng: -110.0},
-          zoom: 3
+          zoom: 2.4
+        },
+        'cz': {
+          center: {lat: 50.0, lng: 14.4},
+          zoom: 6
         },
         'fr': {
           center: {lat: 46.2, lng: 2.2},
@@ -40,7 +44,7 @@
         },
         'za': {
           center: {lat: -30.6, lng: 22.9},
-          zoom: 5
+          zoom: 4.5
         },
         'es': {
           center: {lat: 40.5, lng: -3.7},
@@ -51,12 +55,12 @@
           zoom: 6
         },
         'us': {
-          center: {lat: 40.759025, lng: -73.985174},
-          zoom: 15
+          center: {lat: 38.3, lng: -97.4},
+          zoom: 3.2
         },  
         'uk': {
-          center: {lat: 51.506805, lng: -0.127511},
-          zoom: 15
+          center: {lat: 54.3, lng: -3.3},
+          zoom: 5
         }
       };
 
@@ -136,7 +140,7 @@
           let search = {
             
             bounds: map.getBounds(),
-            pngtypes: [poi]
+            types: [poi]
           };
         
           places.nearbySearch(search, function(results, status) {
