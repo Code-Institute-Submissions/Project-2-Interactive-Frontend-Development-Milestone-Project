@@ -42,8 +42,15 @@ h2{
     margin-left: 0px;
 }
 
+.border-continentinfo {
+    margin-right: 0px;
+    margin-left: 0px;
+    border: solid;
+}
+
+
 .travellocationslist{
-    margin-top: 0px;
+    margin-top: 20px;
     padding: 10px;
 }
 
@@ -136,6 +143,8 @@ h2{
     padding-right: 100px;
     padding-bottom: 100px;
     margin: 5%;
+    float: left;
+    width:60%;
 }
 }
 @media screen and (max-width: 768px){
@@ -145,7 +154,6 @@ h2{
     min-height: 250px;
     min-width: 60%;
     margin: 10px;
-    background-size: cover;
 }
 }
 
@@ -155,6 +163,7 @@ h2{
 .europe-backgroundimage{
     background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
     background-position-y: bottom;
+    background-size: cover;
 }
 }
 
