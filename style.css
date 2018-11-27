@@ -24,6 +24,9 @@
 h1{
    text-align: center; 
 }
+h2{
+    font-size: 20px;
+}
 
 .contact-description{
     text-align:center;
@@ -40,8 +43,8 @@ h1{
 }
 
 .travellocationslist{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 0px;
+    padding: 10px;
 }
 
      /*------ navbar ------*/
@@ -49,7 +52,8 @@ h1{
 .navbar{
     background-color: blue;
     color:  white;
-    margin: 0px
+    margin: 0px;
+    margin-bottom: -10px;
 }
 .navbar-nav{
     background-color: blue;
@@ -93,8 +97,12 @@ h1{
 @media screen and (min-width: 768px){
 .mapscontainer{
     border: solid;
-    min-height: 350px;
-    margin: 50px;
+    min-height: 440px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+     max-width: 60%;
+     left: 10%;
+     right:10%;
     }
 }
 
@@ -102,10 +110,8 @@ h1{
 .mobile-mapscontainer{
     border: solid;
     min-height: 350px;
-    margin: 20px;
 }
 }
-
 
 /*---google maps background images---*/
 
@@ -114,6 +120,17 @@ h1{
     background: url("/assets/images/beachholiday.jpg") no-repeat center top;
     min-height: 1000px;
     background-size: cover;
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 8%;
+    margin: 5%;
+}
+}
+@media screen and (min-width: 768px){
+.backgroundimage-orientation{
+    min-height: 400px;
+    background-size: cover;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
@@ -121,17 +138,14 @@ h1{
     margin: 5%;
 }
 }
-
 @media screen and (max-width: 768px){
-.beachholiday-mobile-backgroundimage{
-    background: url("/assets/images/beachholiday.jpg") no-repeat center top;
+.mobile-backgroundimage-orientation{
     background-size: cover;
-    min-height: 800px;
-    padding-top: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
-    
+    float: left;
+    min-height: 250px;
+    min-width: 60%;
+    margin: 10px;
+    background-size: cover;
 }
 }
 
@@ -140,13 +154,6 @@ h1{
 @media screen and (min-width: 768px){
 .europe-backgroundimage{
     background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
-    min-height: 400px;
-    background-size: cover;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    margin: 5%;
     background-position-y: bottom;
 }
 }
@@ -154,37 +161,18 @@ h1{
 @media screen and (max-width: 768px){
 .europe-mobile-backgroundimage{
     background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
+    background-position-y: bottom;
     background-size: cover;
-    min-height: 400px;
-    padding-top: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
     
 }
 }
-@media screen and (min-width: 1200px){
-.europe-extralargebackgroundimage{
-}
-}
 
-@media screen and (min-width: 1200px){
-.travellocationslist-extralarge{
-}
-}
 
 /*--- North America background images---*/
 
 @media screen and (min-width: 768px){
 .northamerica-backgroundimage{
     background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
-    min-height: 400px;
-    background-size: cover;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    margin: 5%;
     background-position-y: center;
 }
 }
@@ -192,12 +180,8 @@ h1{
 @media screen and (max-width: 768px){
 .northamerica-mobile-backgroundimage{
     background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
+    background-position-y: center;
     background-size: cover;
-    min-height: 400px;
-    padding-top: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
 }
 }
 
@@ -206,13 +190,6 @@ h1{
 @media screen and (min-width: 768px){
 .southamerica-backgroundimage{
     background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
-    min-height: 400px;
-    background-size: cover;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    margin: 5%;
     background-position-y: bottom;
 }
 }
@@ -220,12 +197,8 @@ h1{
 @media screen and (max-width: 768px){
 .southamerica-mobile-backgroundimage{
     background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
+    background-position-y: bottom;
     background-size: cover;
-    min-height: 400px;
-    padding-top: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
 }
 }
 
@@ -234,13 +207,7 @@ h1{
 @media screen and (min-width: 768px){
 .africa-backgroundimage{
     background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
-    min-height: 400px;
-    background-size: cover;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    margin: 5%;
+
 }
 }
 
@@ -248,11 +215,7 @@ h1{
 .africa-mobile-backgroundimage{
     background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
     background-size: cover;
-    min-height: 400px;
-    padding-top: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
+
 }
 }
 
@@ -261,13 +224,6 @@ h1{
 @media screen and (min-width: 768px){
 .australia-backgroundimage{
     background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
-    min-height: 400px;
-    background-size: cover;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    margin: 5%;
     background-position-y: 70%;
 }
 }
@@ -275,12 +231,8 @@ h1{
 @media screen and (max-width: 768px){
 .australia-mobile-backgroundimage{
     background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
+    background-position-y: 70%;
     background-size: cover;
-    min-height: 400px;
-    padding-top: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
 }
 }
 
@@ -289,13 +241,6 @@ h1{
 @media screen and (min-width: 768px){
 .oceania-backgroundimage{
     background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
-    min-height: 400px;
-    background-size: cover;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    margin: 5%;
     background-position-y: center;
 }
 }
@@ -303,24 +248,69 @@ h1{
 @media screen and (max-width: 768px){
 .oceania-mobile-backgroundimage{
     background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
+    background-position-y: center;
     background-size: cover;
-    min-height: 400px;
-    padding-top: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 50px;
 }
 }
 
+.maplistingbackground{
+    background-color: wheat;
+}
+
+
+
+/* Box styles */
+.myBox {
+border: none;
+padding: 5px;
+font: 24px/36px sans-serif;
+overflow: scroll;
+width: 20%;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+background: #f5f5f5;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: #ccc;  
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #999;  
+}
 
 
 /* test map function */
 
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
+    @media screen and (min-width: 768px){
       #map {
         height: 100%;
+        max-height:440px;
+        margin-top: 50px;
+        margin-bottom: 50px;
       }
+    }
+    @media screen and (max-width: 768px){
+            #map {
+        height: 100%;
+        max-height:440px;
+        margin-top: 50px;
+    
+      }
+    }
+      
+      
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
@@ -330,20 +320,36 @@ h1{
       table {
         font-size: 12px;
       }
-      #map {
-        width: 440px;
-        height:440px;
+      
+      .margins-10px{
+          margin: 10px;
       }
-      #listing {
-        position: absolute;
-        width: 200px;
-        height: 470px;
+
+    
+      @media screen and (min-width: 768px){
+      .listing {
+        max-height: 440px;
         overflow: auto;
-        left: 542px;
-        top: 70px;
         cursor: pointer;
         overflow-x: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        left: 10%;
+        right:10%;
       }
+}
+      @media screen and (max-width: 768px){
+        .listing-mobile {
+        width: 100%;
+        max-height: 440px;
+        overflow: auto;
+        cursor: pointer;
+        overflow-x: hidden;
+        margin-bottom: 50px;
+        padding: 0px;
+      }
+      }
+
       #findhotels {
         position: absolute;
         text-align: right;
@@ -363,7 +369,6 @@ h1{
         background-color: #fff;
       }
       #controls {
-        position: absolute;
         left: 300px;
         width: 140px;
         top: 0px;
@@ -385,10 +390,20 @@ h1{
         width: 24px;
         height: 24px;
       }
-      #resultsTable {
-        border-collapse: collapse;
-        width: 240px;
       
+      @media screen and (min-width: 768px){
+      .resultsTable {
+        border-collapse: collapse;
+        width: 170%;
+      
+      }
+      }
+            
+      @media screen and (max-width: 768px){
+          .resultsTable-mobile{
+              width: 100%;
+              margin-bottom: 5% ;
+          }
       }
       #rating {
         font-size: 13px;

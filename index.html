@@ -25,7 +25,7 @@
       <div class="row">
       <div class="col-xs col-sm col-md col-lg">
         <header class="header">
-          <nav class="navbar navbar-default">
+          <nav id="navbar-default" class="navbar navbar-default navbarFixed">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
@@ -56,17 +56,105 @@
         </nav>
         </header>
         <section class="beachholiday-backgroundimage beachholiday-mobile-backgroundimage">
-            <div>
-                <div class="row destinationcontainer mobile-destinationcontainer" >
-                    <h1>Destination search</h1>
-                      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-                    <div id="map"class="col-xs col-sm col-md col-lg  mapscontainer mobile-mapscontainer"></div>
-                </div>
-            </div>
-            </section>
+            <div class="maplistingbackground">
+            <div class="margins-10px">
+    <div class="container-search">
+      <div id="centersearch">
+
+        <div>
+             Search   
+        </div>
+        <input  id="autocomplete" type="text" placeholder="Start typing here" />
+        
+    <div id="controls">
+      <select id="country">
+        <option value="all">All</option>
+        <option value="au">Australia</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="cz">Czech Republic</option>
+        <option value="fr">France</option>
+        <option value="de">Germany</option>
+        <option value="mx">Mexico</option>
+        <option value="nz">New Zealand</option>
+        <option value="it">Italy</option>
+        <option value="za">South Africa</option>
+        <option value="es">Spain</option>
+        <option value="pt">Portugal</option>
+        <option value="us">U.S.A.</option>
+        <option value="uk" selected>United Kingdom</option>
+      </select>
+    </div>
+    </div>
+    </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>            
+   <div id="placestoggle" class="pac-controls">
+     <div id="places">
+       </div>
+      <input onchange="search()"  type="radio" id="lodging" name="option" checked="checked" disabled />
+      <label for="lodging">Accommodation</label>
+     
+      <input onchange="search()"  type="radio" id="art_gallery" name="option" disabled />
+      <label for="art_gallery">Art Gallery</label>
+           
+      <input onchange="search()"  type="radio" id="museum" name="option" disabled />
+      <label for="museum">Museum</label>
+           
+      <input onchange="search()"  type="radio" id="amusement_park" name="option" disabled />
+      <label for="amusement_park">Amusement Park</label>
+     
+      <input onchange="search()"  type="radio" id="bar" name="option" disabled />
+      <label for="bar">Bars</label>
+           
+      <input onchange="search()"  type="radio" id="restaurant" name="option" disabled />
+      <label for="restaurant">Restaurants</label>
+   </div>
+   </div>
+   <div class="row">
+   <div  class="col-xs col-sm col-md " style="width: 100%;">
+       
+    <div id="map" class="mapscontainer mobile-mapscontainer col-sm-8"></div>
+     
+    <div class="listing listing-mobile col-sm-4 myBox">
+      <table class=" resultsTable resultsTable-mobile">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+    </div>
+</div>
+</div>
+</section>
+            <hr>
             <section id="europe">
                 <div><h1>Europe</h1></div>
                 <div class="row">
+                <div class="europe-backgroundimage europe-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation" ><p>Old Town Square in Prague</p></div>
                 <div class="travellocationslist">
                     <h2>Travel locations</h2>
                     <p>Czech Republic</p>
@@ -76,61 +164,67 @@
                     <p>Spain</p>
                     <p>Uk</p>
                 </div>
-                <div class="europe-backgroundimage europe-mobile-backgroundimage"><p>Old Town Square in Prague</p></div>
                 </div>
             </section>
+            <hr>
             <section id="northamerica">
                 <div><h1>North America</h1></div>
                 <div class="row">
+                <div class="northamerica-backgroundimage northamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
                 <div class="travellocationslist">
                     <h2>Travel locations</h2>
                     <p>Canada</p>
                     <p>Mexico</p>
                     <p>USA</p>
                 </div>
-                <div class="northamerica-backgroundimage northamerica-mobile-backgroundimage"></div>
                 </div>
             </section>
+            <hr>
            <section id="southamerica">
                <div><h1>South America</h1></div>
                 <div class="row">
+               <div class="southamerica-backgroundimage southamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
                 <div class="travellocationslist">
                     <h2>Travel locations</h2>
                     <p>Brazil</p>
                 </div>
-               <div class="southamerica-backgroundimage southamerica-mobile-backgroundimage"></div>
                </div>
                </section>
+               <hr>
            <section id="africa">
                <div><h1>Africa</h1></div>
                <div class="row">
+               <div class="africa-backgroundimage africa-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
                 <div class="travellocationslist">
                     <h2>Travel locations</h2>
                     <p>South Africa</p>
                     </div>
-               <div class="africa-backgroundimage africa-mobile-backgroundimage"></div>
                </div>
                </section>
+               <hr>
            <section id="australia">
                <div><h1>Australia</h1></div>
                <div class="row">
+               <div class="australia-backgroundimage australia-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
                 <div class="travellocationslist">
                     <h2>Travel locations</h2>
                     <p>Australia</p>
                 </div>
-               <div class="australia-backgroundimage australia-mobile-backgroundimage"></div>
                </div>
                </section>
+               <hr>
            <section id="oceania">
                <div><h1>Oceania</h1></div>
                <div class="row">
+               <div class="oceania-backgroundimage oceania-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
                 <div class="travellocationslist">
                     <h2>Travel locations</h2>
                     <p>New Zealand</p>
                 </div>
-               <div class="oceania-backgroundimage oceania-mobile-backgroundimage"></div>
                </div>
                </section>
+               <hr>
+               <!----setup mail functionality using emailjs.com---->
            <section id="contact" class="contact-section">
              <div>
                <h1>Contact</h1>
@@ -148,9 +242,7 @@
                 </form>
             </div>
           </div>
-
-             
-           </section>
+         </section>
         <footer class="footer">
             
     </footer>
@@ -158,6 +250,8 @@
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
         <script src="/assets/js/maps.js"></script>
         <script src="/assets/js/sendemails.js"></script>
+        <script src="/assets/js/search.js"></script>
+        <script src="/assets/js/scroll-navbar.js"></script>
     </div>
   </div>
 </body>

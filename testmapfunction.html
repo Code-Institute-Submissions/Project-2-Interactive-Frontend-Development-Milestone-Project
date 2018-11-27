@@ -13,13 +13,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <span class="map-icon map-icon-point-of-interest"></span>
         <title>Travel</title>
-        
-        
-        
 
     <link rel="shortcut icon" href="#">
     
-            <style>
+      <style>
 
     </style>
 </head>
@@ -29,14 +26,12 @@
     </header>
     
     <div class="container-search">
-                <div id="centersearch">
+      <div id="centersearch">
 
         <div>
              Search   
         </div>
         <input  id="autocomplete" type="text" placeholder="Start typing here" />
-        
-        
     <div id="controls">
       <select id="country">
         <option value="all">All</option>
@@ -109,6 +104,8 @@
    </div>
    <div class="row">
    <div  class="col-xs col-sm col-md col-lg">
+    <div id="map" class="mapscontainer mobile-mapscontainer"></div>
+
      
     <div id="listing">
       <table id="resultsTable">
@@ -116,7 +113,6 @@
       </table>
     </div>
 
-    <div id="map" class="mapscontainer mobile-mapscontainer"></div>
     </div>
 </div>
     <footer>
@@ -124,7 +120,7 @@
     </footer>
         <script src="/assets/js/search.js"></script>
         <script src="/assets/js/nav.js"></script>
-        <script src="testmapfunctions.js"></script>
+        <script src="maps.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>
