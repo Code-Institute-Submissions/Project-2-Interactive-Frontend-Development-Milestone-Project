@@ -1,374 +1,75 @@
      /*------ layout ------*/
      
-.body{
+    .body{
         background-color: mintcream;
-}
-
-.header{
- 
-}
-
-.footer{
-    min-height: 200px
-}
-
-.body{
-    
-}
-
-.title{
-    color: white;
-}
-
-
-h1{
-   text-align: center; 
-}
-h2{
-    font-size: 20px;
-}
-
-.contact-description{
-    text-align:center;
-    font-size:20px;
-}
-.contact-section{
-    width: 80%;
-   margin: 10%;
-}
-
-.row {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-
-.border-continentinfo {
-    margin-right: 0px;
-    margin-left: 0px;
-    border: solid;
-}
-
-
-.travellocationslist{
-    margin-top: 20px;
-    padding: 10px;
-}
-
-     /*------ navbar ------*/
-
-.navbar{
-    background-color: blue;
-    color:  white;
-    margin: 0px;
-    margin-bottom: -10px;
-}
-.navbar-nav{
-    background-color: blue;
-}
-
-.navbar-default .navbar-brand {
-    color: white;    
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: white;
-    
-}
-
-
-     /*------ Image ------*/
-
-@media screen and (min-width: 768px){
-.destinationcontainer{
-    border: solid;
-    padding: 10px;
-    border-radius: 100px;
-    min-height: 500px;
-    background-color: white;
     }
-}
-
-@media screen and (max-width: 768px){
-.mobile-destinationcontainer{
-    min-height: 500px;
-    background-color: white;
-    padding-top: 5px;
     
-}
-}
-
-@media screen and (min-width: 768px){
-.mapscontainer{
-    border: solid;
-    min-height: 440px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-     max-width: 60%;
-     left: 10%;
-     right:10%;
+    .header{
+     
     }
-}
-
-@media screen and (max-width: 768px){
-.mobile-mapscontainer{
-    border: solid;
-    min-height: 350px;
-}
-}
-
-/*---google maps background images---*/
-
-@media screen and (min-width: 768px){
-.beachholiday-backgroundimage{
-    background: url("/assets/images/beachholiday.jpg") no-repeat center top;
-    min-height: 1000px;
-    background-size: cover;
-    padding-top: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 8%;
-    margin: 5%;
-}
-}
-@media screen and (min-width: 768px){
-.backgroundimage-orientation{
-    min-height: 400px;
-    background-size: cover;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    margin: 5%;
-    float: left;
-    width:60%;
-}
-}
-@media screen and (max-width: 768px){
-.mobile-backgroundimage-orientation{
-    background-size: cover;
-    float: left;
-    min-height: 250px;
-    min-width: 60%;
-    margin: 10px;
-}
-}
-
-/*--- europe background images---*/
-
-@media screen and (min-width: 768px){
-.europe-backgroundimage{
-    background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
-    background-position-y: bottom;
-    background-size: cover;
-}
-}
-
-@media screen and (max-width: 768px){
-.europe-mobile-backgroundimage{
-    background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
-    background-position-y: bottom;
-    background-size: cover;
     
-}
-}
-
-
-/*--- North America background images---*/
-
-@media screen and (min-width: 768px){
-.northamerica-backgroundimage{
-    background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
-    background-position-y: center;
-}
-}
-
-@media screen and (max-width: 768px){
-.northamerica-mobile-backgroundimage{
-    background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
-    background-position-y: center;
-    background-size: cover;
-}
-}
-
-/*--- South America background images---*/
-
-@media screen and (min-width: 768px){
-.southamerica-backgroundimage{
-    background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
-    background-position-y: bottom;
-}
-}
-
-@media screen and (max-width: 768px){
-.southamerica-mobile-backgroundimage{
-    background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
-    background-position-y: bottom;
-    background-size: cover;
-}
-}
-
-/*--- Africa background images---*/
-
-@media screen and (min-width: 768px){
-.africa-backgroundimage{
-    background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
-
-}
-}
-
-@media screen and (max-width: 768px){
-.africa-mobile-backgroundimage{
-    background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
-    background-size: cover;
-
-}
-}
-
-/*--- australia  background images---*/
-
-@media screen and (min-width: 768px){
-.australia-backgroundimage{
-    background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
-    background-position-y: 70%;
-}
-}
-
-@media screen and (max-width: 768px){
-.australia-mobile-backgroundimage{
-    background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
-    background-position-y: 70%;
-    background-size: cover;
-}
-}
-
-/*--- oceania  background images---*/
-
-@media screen and (min-width: 768px){
-.oceania-backgroundimage{
-    background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
-    background-position-y: center;
-}
-}
-
-@media screen and (max-width: 768px){
-.oceania-mobile-backgroundimage{
-    background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
-    background-position-y: center;
-    background-size: cover;
-}
-}
-
-.maplistingbackground{
-    background-color: wheat;
-}
-
-
-
-/* Box styles */
-.myBox {
-border: none;
-padding: 5px;
-font: 24px/36px sans-serif;
-overflow: scroll;
-width: 20%;
-}
-
-/* Scrollbar styles */
-::-webkit-scrollbar {
-width: 12px;
-height: 12px;
-}
-
-::-webkit-scrollbar-track {
-background: #f5f5f5;
-border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-border-radius: 10px;
-background: #ccc;  
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #999;  
-}
-
-
-/* test map function */
-
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-    @media screen and (min-width: 768px){
-      #map {
-        height: 100%;
-        max-height:440px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
+    .footer{
+        min-height: 200px
     }
-    @media screen and (max-width: 768px){
-            #map {
-        height: 100%;
-        max-height:440px;
-        margin-top: 50px;
     
-      }
+    .body{
+        
     }
+    
+    .title{
+        color: white;
+    }
+    
+    
+    h1{
+       text-align: center; 
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+    .contact-description{
+        text-align:center;
+        font-size:20px;
+    }
+    .contact-section{
+        width: 80%;
+       margin: 10%;
+    }
+    
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .border-continentinfo {
+        margin-right: 0px;
+        margin-left: 0px;
+        border: solid;
+    }
+    
+    ol, ul {
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+
       
-      
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
+
+    html, body {
         height: 100%;
         margin: 0;
         padding: 0;
       }
-      table {
-        font-size: 12px;
-      }
-      
-      .margins-10px{
-          margin: 10px;
+
+    .margins-10px{
+        margin: 10px;
+        margin-bottom: -30px;
       }
 
-    
-      @media screen and (min-width: 768px){
-      .listing {
-        max-height: 440px;
-        overflow: auto;
-        cursor: pointer;
-        overflow-x: hidden;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        left: 10%;
-        right:10%;
-      }
-}
-      @media screen and (max-width: 768px){
-        .listing-mobile {
-        width: 100%;
-        max-height: 440px;
-        overflow: auto;
-        cursor: pointer;
-        overflow-x: hidden;
-        margin-bottom: 50px;
-        padding: 0px;
-      }
-      }
 
-      #findhotels {
-        position: absolute;
-        text-align: right;
-        width: 100px;
-        font-size: 14px;
-        padding: 4px;
-        z-index: 5;
-        background-color: #fff;
-      }
-      #locationField {
+    #locationField {
         position: absolute;
         width: 190px;
         height: 25px;
@@ -384,47 +85,370 @@ background: #999;
         z-index: 5;
         background-color: #fff;
       }
-      #autocomplete {
+    #autocomplete {
         width: 100%;
       }
-      #country {
+    #country {
         width: 100%;
       }
-      .placeIcon {
+    .placeIcon {
         width: 20px;
         height: 34px;
         margin: 4px;
       }
-      .hotelIcon {
+    .hotelIcon {
         width: 24px;
         height: 24px;
       }
       
-      @media screen and (min-width: 768px){
-      .resultsTable {
+
+
+
+    /*continent layout*/
+    
+    @media screen and (min-width: 768px){
+    .travellocationslist{
+        margin-top: 5%;
+        padding: 0px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+    .travellocationslist-mobile{
+        margin-top: 0px;
+        padding: 0px;
+        margin-left: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    }
+
+     /*------ navbar ------*/
+    
+    .navbar{
+        background-color: blue;
+        color:  white;
+        margin: 0px;
+        margin-bottom: -10px;
+    }
+    .navbar-nav{
+        background-color: blue;
+    }
+    
+    .navbar-default .navbar-brand {
+        color: white;    
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+        color: white;
+    }
+    
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: white;
+        
+    }
+
+
+     /*------ Image ------*/
+    
+    @media screen and (min-width: 768px){
+    .destinationcontainer{
+        border: solid;
+        padding: 10px;
+        border-radius: 100px;
+        min-height: 500px;
+        background-color: white;
+        }
+    }
+    
+    @media screen and (max-width: 768px){
+    .mobile-destinationcontainer{
+        min-height: 500px;
+        background-color: white;
+        padding-top: 5px;
+        
+    }
+    }
+
+    @media screen and (min-width: 768px){
+    .mapscontainer{
+        border: solid;
+        min-height: 440px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 50%;
+        left: 10%;
+        right: 10%;
+        }
+    }
+    
+    @media screen and (max-width: 768px){
+    .mobile-mapscontainer{
+        border: solid;
+        min-height: 300px;
+    }
+    }
+
+    /*---google maps background images---*/
+    
+    @media screen and (min-width: 768px){
+    .beachholiday-backgroundimage{
+        background: url("/assets/images/beachholiday.jpg") no-repeat center top;
+        min-height: 750px;
+        background-size: cover;
+        padding-top: 8%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 8%;
+    }
+    }
+    @media screen and (min-width: 768px){
+    .backgroundimage-orientation{
+        min-height: 400px;
+        background-size: cover;
+        margin: 5%;
+        float: left;
+        width:60%;
+    }
+    }
+    @media screen and (max-width: 768px){
+    .mobile-backgroundimage-orientation{
+        background-size: cover;
+        min-height: 250px;
+        min-width: 60%;
+        margin: 10px;
+    }
+    }
+
+    /*--- europe background images---*/
+    
+    @media screen and (min-width: 768px){
+    .europe-backgroundimage{
+        background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
+        background-position-y: bottom;
+        background-size: cover;
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+    .europe-mobile-backgroundimage{
+        background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
+        background-position-y: bottom;
+        background-size: cover;
+        
+    }
+    }
+    
+    
+    /*--- North America background images---*/
+    
+    @media screen and (min-width: 768px){
+    .northamerica-backgroundimage{
+        background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
+        background-position-y: center;
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+    .northamerica-mobile-backgroundimage{
+        background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
+        background-position-y: center;
+        background-size: cover;
+    }
+    }
+    
+    /*--- South America background images---*/
+    
+    @media screen and (min-width: 768px){
+    .southamerica-backgroundimage{
+        background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
+        background-position-y: bottom;
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+    .southamerica-mobile-backgroundimage{
+        background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
+        background-position-y: bottom;
+        background-size: cover;
+    }
+    }
+
+    /*--- Africa background images---*/
+    
+    @media screen and (min-width: 768px){
+    .africa-backgroundimage{
+        background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
+    
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+    .africa-mobile-backgroundimage{
+        background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
+        background-size: cover;
+    
+    }
+    }
+    
+    /*--- australia  background images---*/
+    
+    @media screen and (min-width: 768px){
+    .australia-backgroundimage{
+        background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
+        background-position-y: 70%;
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+    .australia-mobile-backgroundimage{
+        background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
+        background-position-y: 70%;
+        background-size: cover;
+    }
+    }
+
+    /*--- oceania  background images---*/
+    
+    @media screen and (min-width: 768px){
+    .oceania-backgroundimage{
+        background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
+        background-position-y: center;
+    }
+    }
+    
+    @media screen and (max-width: 768px){
+    .oceania-mobile-backgroundimage{
+        background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
+        background-position-y: center;
+        background-size: cover;
+    }
+    }
+    
+
+    /* Box styles */
+    .myBox {
+        border: none;
+        padding: 5px;
+        font: 24px/36px sans-serif;
+        overflow: scroll;
+        width: 30%;
+    }
+    
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #f5f5f5;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #ccc;  
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #999;  
+    }
+    
+    /* map */
+ 
+    @media screen and (min-width: 768px){
+    #map {
+        height: 100%;
+        max-height:440px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+    @media screen and (max-width: 768px){
+    #map {
+        height: 100%;
+        max-height:440px;
+        margin-top: 50px;
+    
+      }
+    }
+      
+
+    /* listings */
+    
+     @media screen and (min-width: 768px){
+    .col-sm-30percent {
+        width: 30%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        }
+        }
+    
+    
+    .maplistingbackground{
+        background-color: wheat;
+    }
+    
+    @media screen and (min-width: 768px){
+    .listing {
+        max-height: 440px;
+        overflow: auto;
+        cursor: pointer;
+        overflow-x: hidden;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        left: 10%;
+        right:10%;
+      }
+    }
+    @media screen and (max-width: 768px){
+    .listing-mobile {
+        width: 100%;
+        max-height: 440px;
+        overflow: auto;
+        cursor: pointer;
+        overflow-x: hidden;
+        margin-bottom: 50px;
+        padding: 0px;
+      }
+    }
+
+
+    /* Results table */
+
+    @media screen and (min-width: 768px){
+    .resultsTable {
         border-collapse: collapse;
         width: 170%;
       
-      }
-      }
-            
-      @media screen and (max-width: 768px){
-          .resultsTable-mobile{
-              width: 100%;
-              margin-bottom: 5% ;
           }
       }
-      #rating {
-        font-size: 13px;
-        font-family: Arial Unicode MS;
+            
+    @media screen and (max-width: 768px){
+    .resultsTable-mobile{
+        width: 100%;
+        margin-bottom: 5% ;
       }
-      .iw_table_row {
+    }
+
+    /* Results table contents */
+
+    table {
+        font-size: 12px;
+      }
+      
+
+    .iw_table_row {
         height: 18px;
       }
-      .iw_attribute_name {
+    .iw_attribute_name {
         font-weight: bold;
         text-align: right;
       }
-      .iw_table_icon {
+    .iw_table_icon {
         text-align: right;
       }
