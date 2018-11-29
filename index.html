@@ -56,7 +56,7 @@
         </nav>
         </header>
         <section class="beachholiday-backgroundimage beachholiday-mobile-backgroundimage">
-            <div class="maplistingbackground">
+            <div class="maplistingbackground maplistingbackground-mobile">
             <div class="margins-10px">
     <div class="container-search">
       <div id="centersearch">
@@ -141,10 +141,19 @@
        
     <div id="map" class="mapscontainer mobile-mapscontainer col-sm-6"></div>
      
-    <div class="listing listing-mobile col-sm-30percent myBox">
-      <table class=" resultsTable resultsTable-mobile">
-        <tbody id="results"></tbody>
-      </table>
+    <div>
+        <div class="row">
+        <div class="col-xs col-sm col-md col-lg">
+            <button  style="text-align:center;width:100%;left: 2%;" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#list">
+            <span style="font-size:20px;">List</span>                     
+            </button>
+        <div class="collapse navbar-collapse-custom listing listing-mobile col-sm-30percent myBox" id="list">
+          <table class=" resultsTable resultsTable-mobile">
+            <tbody id="results"></tbody>
+          </table>
+        </div>
+      </div>
+      </div>
     </div>
     </div>
 </div>
@@ -154,7 +163,7 @@
             <section id="europe">
                 <div><h1>Europe</h1></div>
                 <div class="row border-continentinfo">
-                <div class="europe-backgroundimage europe-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation" ><p>Old Town Square in Prague</p></div>
+                <div class="europe-backgroundimage europe-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Old Town square in prague. Czech Republic</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
                     <ul>Travel locations</ul>
                     <li>Czech Republic</li>
@@ -170,7 +179,7 @@
             <section id="northamerica">
                 <div><h1>North America</h1></div>
                 <div class="row border-continentinfo">
-                <div class="northamerica-backgroundimage northamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
+                <div class="northamerica-backgroundimage northamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Ceiba del mar. Mexico</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
                     <ul>Travel locations</ul>
                     <li>Canada</li>
@@ -183,7 +192,7 @@
            <section id="southamerica">
                <div><h1>South America</h1></div>
                 <div class="row border-continentinfo">
-               <div class="southamerica-backgroundimage southamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
+               <div class="southamerica-backgroundimage southamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Rio de Janeiro. Brazil</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
                     <ul>Travel locations</ul>
                     <li>Brazil</li>
@@ -194,7 +203,7 @@
            <section id="africa">
                <div><h1>Africa</h1></div>
                <div class="row border-continentinfo">
-               <div class="africa-backgroundimage africa-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
+               <div class="africa-backgroundimage africa-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Clifton, Cape town. South Africa</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
                     <ul>Travel locations</ul>
                     <li>South Africa</li>
@@ -205,7 +214,7 @@
            <section id="australia">
                <div><h1>Australia</h1></div>
                <div class="row border-continentinfo">
-               <div class="australia-backgroundimage australia-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
+               <div class="australia-backgroundimage australia-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Sydney. Australia</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
                     <ul>Travel locations</ul>
                     <li>Australia</li>
@@ -216,7 +225,7 @@
            <section id="oceania">
                <div><h1>Oceania</h1></div>
                <div class="row border-continentinfo">
-               <div class="oceania-backgroundimage oceania-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"></div>
+               <div class="oceania-backgroundimage oceania-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Queenstown-Lakes. New Zealand</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
                     <ul>Travel locations</ul>
                     <li>New Zealand</li>

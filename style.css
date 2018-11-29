@@ -46,6 +46,7 @@
         margin-right: 0px;
         margin-left: 0px;
         border: solid;
+        background-color: antiquewhite;
     }
     
     ol, ul {
@@ -101,7 +102,17 @@
         height: 24px;
       }
       
-
+    .height400px{
+        height: 400px;
+        text-align: right;
+        margin-right: 10px;
+        color: white;
+    }  
+      
+.imagetextposition{
+    bottom: -95%;
+    position: relative;
+}
 
 
     /*continent layout*/
@@ -148,6 +159,14 @@
     .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
         color: white;
         
+    }
+    
+    @media (min-width: 768px){
+    .navbar-collapse-custom {
+        display: block!important;
+        height: auto!important;
+        padding-bottom: 0;
+    }
     }
 
 
@@ -388,9 +407,18 @@
         }
         }
     
-    
+    @media screen and (min-width: 768px){
     .maplistingbackground{
-        background-color: wheat;
+        background-color: antiquewhite;
+        border-radius: 30px;
+        padding: 5px;
+        }
+    }
+    
+    @media screen and (max-width: 768px){
+    .maplistingbackground-mobile{
+        background-color: antiquewhite;
+        }
     }
     
     @media screen and (min-width: 768px){
