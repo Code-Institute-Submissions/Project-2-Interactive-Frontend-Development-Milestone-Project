@@ -72,7 +72,7 @@
           mapTypeControl: false,
           panControl: false,
           zoomControl: false,
-          streetViewControl: true
+          streetViewControl: false
         });
 
         infoWindow = new google.maps.InfoWindow({
@@ -109,11 +109,9 @@
           document.getElementById('autocomplete').placeholder = 'Start typing here';
         }
       }
- 
- 
 
-                    
-// Search for accomodation, art galleries, Museums, Amusement Parks, Bars and Restaurants            
+// Search for accomodation, art galleries, Museums, Bars and Restaurants  
+//  Google maps only allows you to search for one plaace type at a time
             
      function search() {
 
@@ -126,22 +124,25 @@
           if (document.getElementById("museum").checked) poi = 'museum';
           clearMarkers();
           markers = [];
-          if (document.getElementById("amusement_park").checked) poi = 'amusement_park';
-          clearMarkers();
-          markers = [];
           if (document.getElementById("bar").checked) poi = 'bar';
           clearMarkers();
           markers = [];
           if (document.getElementById("restaurant").checked) poi = 'restaurant';
           clearMarkers();
           markers = [];
+          if (document.getElementById("cafe").checked) poi = 'cafe';
+          clearMarkers();
+          markers = []; 
           
+         
+  
           let search = {
             
             bounds: map.getBounds(),
             types: [poi]
           };
         
+    
           places.nearbySearch(search, function(results, status) {
            if (status === google.maps.places.PlacesServiceStatus.OK) {
             clearResults();
@@ -233,7 +234,7 @@
        }
           
       
-      // Clear results from map
+      // Results cleared from map
       function clearResults() {
         var results = document.getElementById('results');
         while (results.childNodes[0]) {
@@ -315,3 +316,6 @@
  }
  
       
+function showSpan() {
+   document.getElementById('welcomeSpan').style.display = "block";
+}

@@ -5,17 +5,17 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="initial-scale=1.0" >
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-        <script type="text/javascript">
-           (function(){
-              emailjs.init("user_cB800O5kK9g8jFnOQcPyU");
-           })();
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+        <script>
+            (function() {
+                emailjs.init("user_cB800O5kK9g8jFnOQcPyU");
+            })();
         </script>
     
         <title class="title">SimpleTravel</title>
@@ -35,10 +35,10 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SimpleTravel</a>
+                <a class="navbar-title" href="index.html">SimpleTravel</a>
               </div>
         
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Navbar -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li><a href="#europe">Europe <span class="sr-only">(current)</span></a></li>
@@ -59,16 +59,16 @@
             <div class="maplistingbackground maplistingbackground-mobile">
             <div class="margins-10px">
     <div class="container-search">
-      <div id="centersearch">
-
+      <div >
+<h1>Travel search</h1>
         <div>
-             Search   
+             Search for a place (example city, town or postcode )
         </div>
-        <input  id="autocomplete" type="text" placeholder="Start typing here" />
+        <input  id="autocomplete" type="text" placeholder="Start typing here" name="answer"  onclick="showSpan()"/>
         
+
     <div id="controls">
       <select id="country">
-        <option value="all">All</option>
         <option value="au">Australia</option>
         <option value="br">Brazil</option>
         <option value="ca">Canada</option>
@@ -86,6 +86,8 @@
       </select>
     </div>
     </div>
+            
+
     </div>
 
     <div style="display: none">
@@ -113,28 +115,35 @@
           </tr>
         </table>
       </div>
-    </div>            
-   <div id="placestoggle" class="pac-controls">
-     <div id="places">
-       </div>
+    </div>    
+
+    <!-- place type search  -->
+   <div id="placestoggle" class="pac-controls" style="margin-top: 10px;">
+     <div id="places"></div>
+         <!-- Google maps only allows you to search for one plaace type at a time  -->
           <input onchange="search()"  type="radio" id="lodging" name="option" checked="checked" disabled />
-          <label for="lodging">Accommodation</label>
+          <label for="lodging">Hotels</label>
      
           <input onchange="search()"  type="radio" id="art_gallery" name="option" disabled />
-          <label for="art_gallery">Art Gallery</label>
+          <label for="art_gallery">Art Galleries</label>
            
           <input onchange="search()"  type="radio" id="museum" name="option" disabled />
-          <label for="museum">Museum</label>
-           
-          <input onchange="search()"  type="radio" id="amusement_park" name="option" disabled />
-          <label for="amusement_park">Amusement Park</label>
-     
+          <label for="museum">Museums</label>
+
           <input onchange="search()"  type="radio" id="bar" name="option" disabled />
           <label for="bar">Bars</label>
            
           <input onchange="search()"  type="radio" id="restaurant" name="option" disabled />
           <label for="restaurant">Restaurants</label>
+
+           <input onchange="search()"  type="radio" id="cafe" name="option" disabled />
+          <label for="restaurant">Cafes</label>
+
+
+ 
        </div>
+
+
    </div>
    <div class="row">
    <div  class="col-xs col-sm col-md " style="width: 100%;">
@@ -144,10 +153,10 @@
     <div>
         <div class="row">
         <div class="col-xs col-sm col-md col-lg">
-            <button  style="text-align:center;width:100%;left: 2%;" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#list">
-            <span style="font-size:20px;">List</span>                     
+            <button type="button" class="navbar-list" data-toggle="collapse" data-target="#list" id="welcomeSpan" >
+            <span class="listspan">Alphabetical A-Z list</span>                     
             </button>
-        <div class="collapse navbar-collapse-custom listing listing-mobile col-sm-30percent myBox" id="list">
+        <div class="collapse navbar-collapse-custom listing col-sm-30percent myBox" id="list">
           <table class=" resultsTable resultsTable-mobile">
             <tbody id="results"></tbody>
           </table>
@@ -163,15 +172,17 @@
             <section id="europe">
                 <div><h1>Europe</h1></div>
                 <div class="row border-continentinfo">
-                <div class="europe-backgroundimage europe-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Old Town square in prague. Czech Republic</p></div></div>
+                <div class="europe-backgroundimage europe-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Old Town square in prague. Czech Republic</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
-                    <ul>Travel locations</ul>
+                    <h3>Travel locations</h3>
+                    <ul>
                     <li>Czech Republic</li>
                     <li>France</li>
                     <li>Italy</li>
                     <li>Portugal</li>
                     <li>Spain</li>
                     <li>Uk</li>
+                    </ul>
                 </div>
                 </div>
             </section>
@@ -179,12 +190,14 @@
             <section id="northamerica">
                 <div><h1>North America</h1></div>
                 <div class="row border-continentinfo">
-                <div class="northamerica-backgroundimage northamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Ceiba del mar. Mexico</p></div></div>
+                <div class="northamerica-backgroundimage northamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Ceiba del mar. Mexico</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
-                    <ul>Travel locations</ul>
+                    <h3>Travel locations</h3>
+                    <ul>
                     <li>Canada</li>
                     <li>Mexico</li>
                     <li>USA</li>
+                    </ul>
                 </div>
                 </div>
             </section>
@@ -192,10 +205,12 @@
            <section id="southamerica">
                <div><h1>South America</h1></div>
                 <div class="row border-continentinfo">
-               <div class="southamerica-backgroundimage southamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Rio de Janeiro. Brazil</p></div></div>
+               <div class="southamerica-backgroundimage southamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Rio de Janeiro. Brazil</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
-                    <ul>Travel locations</ul>
+                    <h3>Travel locations</h3>
+                    <ul>
                     <li>Brazil</li>
+                    </ul>
                 </div>
                </div>
                </section>
@@ -203,10 +218,12 @@
            <section id="africa">
                <div><h1>Africa</h1></div>
                <div class="row border-continentinfo">
-               <div class="africa-backgroundimage africa-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Clifton, Cape town. South Africa</p></div></div>
+               <div class="africa-backgroundimage africa-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Clifton, Cape town. South Africa</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
-                    <ul>Travel locations</ul>
+                    <h3>Travel locations</h3>
+                    <ul>
                     <li>South Africa</li>
+                    </ul>
                     </div>
                </div>
                </section>
@@ -214,10 +231,12 @@
            <section id="australia">
                <div><h1>Australia</h1></div>
                <div class="row border-continentinfo">
-               <div class="australia-backgroundimage australia-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Sydney. Australia</p></div></div>
+               <div class="australia-backgroundimage australia-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Sydney. Australia</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
-                    <ul>Travel locations</ul>
+                    <h3>Travel locations</h3>
+                    <ul>
                     <li>Australia</li>
+                    </ul>
                 </div>
                </div>
                </section>
@@ -225,15 +244,17 @@
            <section id="oceania">
                <div><h1>Oceania</h1></div>
                <div class="row border-continentinfo">
-               <div class="oceania-backgroundimage oceania-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="height400px"><p class="imagetextposition">Queenstown-Lakes. New Zealand</p></div></div>
+               <div class="oceania-backgroundimage oceania-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Queenstown-Lakes. New Zealand</p></div></div>
                 <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
-                    <ul>Travel locations</ul>
+                    <h3>Travel locations</h3>
+                    <ul>
                     <li>New Zealand</li>
+                    </ul>
                 </div>
                </div>
                </section>
                <hr>
-               <!----setup mail functionality using emailjs.com---->
+               <!-- mail functionality using emailjs.com -->
            <section id="contact" class="contact-section">
              <div>
                <h1>Contact</h1>
@@ -244,9 +265,15 @@
 			    <div class="form-group">
 	           <p class="lead">Personal Details:</p>
                 <form id="myform" onsubmit="return sendMail(this);" method="POST">
-                <input type="text" name="from_name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <div class="form-group">
+                        <input type="text" name="from_name" class="form-control" id="fullname" placeholder="Name" required/>
+                    </div>
+                    <div class="form-group">
                 <input type="email" name="from_email" class="form-control" id="emailaddress" placeholder="Email Address" required>
-                <textarea type="text" name="project_request" class="form-control" id="Textarea" rows="5" placeholder="Comments"></textarea>
+                    </div>
+                    <div class="form-group">
+                <textarea name="project_request" class="form-control" id="Textarea" rows="5" placeholder="Comments"></textarea>
+                    </div>
                 <button type="submit" class="btn btn-success center-block btn-lg" value="Go to index.html">Submit</button>
                 </form>
             </div>
@@ -256,7 +283,7 @@
             
     </footer>
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
         <script src="/assets/js/maps.js"></script>
         <script src="/assets/js/sendemails.js"></script>
         <script src="/assets/js/search.js"></script>
