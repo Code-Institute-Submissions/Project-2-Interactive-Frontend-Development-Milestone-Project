@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-        <meta name="viewport" content="initial-scale=1.0" >
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -17,10 +17,8 @@
                 emailjs.init("user_cB800O5kK9g8jFnOQcPyU");
             })();
         </script>
-    
         <title class="title">SimpleTravel</title>
-        
-    </head>
+</head>
     <body class="body">
       <div class="row">
       <div class="col-xs col-sm col-md col-lg">
@@ -35,7 +33,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-title" href="index.html">SimpleTravel</a>
+                <a class="navbar-title" href="index.html"><img  src="/assets/images/Airplane.svg.png" alt="plane" height="30" width="30" style="margin-top:-8px;margin-right:5px;"/>SimpleTravel</a>
               </div>
         
             <!-- Navbar -->
@@ -45,8 +43,7 @@
                 <li><a href="#northamerica">North America</a></li>
                 <li><a href="#southamerica">South America</a></li>
                 <li><a href="#africa">Africa</a></li>
-                <li><a href="#australia">Australia</a></li>
-                <li><a href="#oceania">Oceania</a></li>
+                <li><a href="#australia/oceania">Australia/Oceania</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#contact">Contact</a></li>
@@ -55,8 +52,8 @@
           </div><!-- /.container-fluid -->
         </nav>
         </header>
-        <section class="beachholiday-backgroundimage beachholiday-mobile-backgroundimage">
-            <div class="maplistingbackground maplistingbackground-mobile">
+        <section class="beachholiday-backgroundimage">
+            <div class="maplistingbackground">
             <div class="margins-10px">
     <div class="container-search">
       <div >
@@ -64,25 +61,38 @@
         <div>
              Search for a place (example city, town or postcode )
         </div>
-        <input  id="autocomplete" type="text" placeholder="Start typing here" name="answer"  onclick="showSpan()"/>
+        <input  id="autocomplete" type="text" placeholder="Start typing here" name="answer"   onclick="showSpan()"/>
         
 
     <div id="controls">
       <select id="country">
+        <option value="ar">Argentina</option>
         <option value="au">Australia</option>
+        <option value="ba">Bahamas</option>
         <option value="br">Brazil</option>
         <option value="ca">Canada</option>
+        <option value="ch">Chile</option>
+        <option value="cu">Cuba</option>
         <option value="cz">Czech Republic</option>
+        <option value="fi">Fiji</option>
         <option value="fr">France</option>
         <option value="de">Germany</option>
+        <option value="ke">Kenya</option>
         <option value="mx">Mexico</option>
+        <option value="mo">Morocco</option>
         <option value="nz">New Zealand</option>
         <option value="it">Italy</option>
+        <option value="pe">Peru</option>
+        <option value="pt">Portugal</option>
+        <option value="sa">Samoa</option>
         <option value="za">South Africa</option>
         <option value="es">Spain</option>
-        <option value="pt">Portugal</option>
-        <option value="us">U.S.A.</option>
+        <option value="to">Tonga</option>
+        <option value="tu">Tunisa</option>
         <option value="uk" selected>United Kingdom</option>
+        <option value="ur">Uruguay</option>
+        <option value="us">U.S.A.</option>
+        <option value="zi">Zimbabwe</option>
       </select>
     </div>
     </div>
@@ -148,17 +158,18 @@
    <div class="row">
    <div  class="col-xs col-sm col-md " style="width: 100%;">
        
-    <div id="map" class="mapscontainer mobile-mapscontainer col-sm-6"></div>
+    <div id="map" class="mapscontainer mapwidth"></div>
      
     <div>
         <div class="row">
         <div class="col-xs col-sm col-md col-lg">
             <button type="button" class="navbar-list" data-toggle="collapse" data-target="#list" id="welcomeSpan" >
-            <span class="listspan">Alphabetical A-Z list</span>                     
+            <span class="listspan">listings</span>                     
             </button>
         <div class="collapse navbar-collapse-custom listing col-sm-30percent myBox" id="list">
-          <table class=" resultsTable resultsTable-mobile">
-            <tbody id="results"></tbody>
+          <table class=" resultsTable" id="myTable">
+            <button onclick="myFunction()" style="width:200px;height:50px">Order</button>
+                <tbody id="results" ></tbody>
           </table>
         </div>
       </div>
@@ -172,8 +183,8 @@
             <section id="europe">
                 <div><h1>Europe</h1></div>
                 <div class="row border-continentinfo">
-                <div class="europe-backgroundimage europe-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Old Town square in prague. Czech Republic</p></div></div>
-                <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
+                <div class="europe-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Old Town square in prague. Czech Republic</p></div></div>
+                <div class="travellocationslist ">
                     <h3>Travel locations</h3>
                     <ul>
                     <li>Czech Republic</li>
@@ -190,11 +201,13 @@
             <section id="northamerica">
                 <div><h1>North America</h1></div>
                 <div class="row border-continentinfo">
-                <div class="northamerica-backgroundimage northamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Ceiba del mar. Mexico</p></div></div>
-                <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
+                <div class="northamerica-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Ceiba del mar. Mexico</p></div></div>
+                <div class="travellocationslist">
                     <h3>Travel locations</h3>
                     <ul>
+                    <li>Bahamas</li>
                     <li>Canada</li>
+                    <li>Cuba</li>
                     <li>Mexico</li>
                     <li>USA</li>
                     </ul>
@@ -205,11 +218,15 @@
            <section id="southamerica">
                <div><h1>South America</h1></div>
                 <div class="row border-continentinfo">
-               <div class="southamerica-backgroundimage southamerica-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Rio de Janeiro. Brazil</p></div></div>
-                <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
+               <div class="southamerica-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Rio de Janeiro. Brazil</p></div></div>
+                <div class="travellocationslist ">
                     <h3>Travel locations</h3>
                     <ul>
+                    <li>Argentina</li>
                     <li>Brazil</li>
+                    <li>Chile</li>
+                    <li>Peru</li>
+                    <li>Uruguay</li>
                     </ul>
                 </div>
                </div>
@@ -218,37 +235,32 @@
            <section id="africa">
                <div><h1>Africa</h1></div>
                <div class="row border-continentinfo">
-               <div class="africa-backgroundimage africa-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Clifton, Cape town. South Africa</p></div></div>
-                <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
+               <div class="africa-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Clifton, Cape town. South Africa</p></div></div>
+                <div class="travellocationslist ">
                     <h3>Travel locations</h3>
                     <ul>
+                    <li>Kenya</li>
+                    <li>Morocco</li>
                     <li>South Africa</li>
+                    <li>Tunisa</li>
+                    <li>Zimbabwe</li>
                     </ul>
                     </div>
                </div>
                </section>
                <hr>
-           <section id="australia">
-               <div><h1>Australia</h1></div>
+           <section id="australia/oceania">
+               <div><h1>Australia/Oceania</h1></div>
                <div class="row border-continentinfo">
-               <div class="australia-backgroundimage australia-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Sydney. Australia</p></div></div>
-                <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
+               <div class="australia-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Sydney. Australia</p></div></div>
+                <div class="travellocationslist ">
                     <h3>Travel locations</h3>
                     <ul>
                     <li>Australia</li>
-                    </ul>
-                </div>
-               </div>
-               </section>
-               <hr>
-           <section id="oceania">
-               <div><h1>Oceania</h1></div>
-               <div class="row border-continentinfo">
-               <div class="oceania-backgroundimage oceania-mobile-backgroundimage mobile-backgroundimage-orientation backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Queenstown-Lakes. New Zealand</p></div></div>
-                <div class="travellocationslist travellocationslist-mobile travellocationslist travellocationslist-mobile-mobile">
-                    <h3>Travel locations</h3>
-                    <ul>
-                    <li>New Zealand</li>
+                    <li>Fiji</li>
+                    <li>Oceania</li>
+                    <li>Samoa</li>
+                    <li>Tonga</li>
                     </ul>
                 </div>
                </div>

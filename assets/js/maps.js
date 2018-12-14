@@ -2,26 +2,47 @@
       var markers = [];
       var autocomplete;
       var countryRestrict = {'country': 'uk'};
-      var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
+      var MARKER_PATH = 'http://maps.google.com/mapfiles/kml/paddle/';
       var hostnameRegexp = new RegExp('^https?://.+?/');
-
+      var rankby
       var countries = {
+        'ar': {
+          center: {lat: -35.3, lng: -64.9},
+          zoom: 3.4
+        },    
         'au': {
           center: {lat: -25.3, lng: 133.8},
           zoom: 3.6
         },
+        'ba': {
+          center: {lat: 24.6, lng: -78.1},
+          zoom: 7.6
+        }, 
+        
         'br': {
           center: {lat: -15.2, lng: -56.9},
           zoom: 3.5
         },
         'ca': {
-          center: {lat: 62, lng: -110.0},
+          center: {lat: 62.0, lng: -110.0},
           zoom: 2.4
         },
+        'ch': {
+          center: {lat: -26.8, lng: -70.3},
+          zoom: 3.8
+        },    
+        'cu': {
+          center: {lat: 21.6, lng: -79.0},
+          zoom: 5.8
+        },    
         'cz': {
           center: {lat: 50.0, lng: 14.4},
           zoom: 6
         },
+        'fi': {
+          center: {lat: -17.77, lng: 178.16},
+          zoom: 8
+        },    
         'fr': {
           center: {lat: 46.2, lng: 2.2},
           zoom: 5
@@ -30,10 +51,18 @@
           center: {lat: 51.2, lng: 10.4},
           zoom: 5
         },
+        'ke': {
+          center: {lat: 0.37, lng: 38.0},
+          zoom: 5.5
+        },    
         'mx': {
           center: {lat: 23.6, lng: -102.5},
           zoom: 4
         },
+        'mo': {
+          center: {lat: 32.0, lng: -6.6},
+          zoom: 5.8
+        },    
         'nz': {
           center: {lat: -40.9, lng: 174.9},
           zoom: 5
@@ -42,6 +71,18 @@
           center: {lat: 41.9, lng: 12.6},
           zoom: 5
         },
+        'pe': {
+          center: {lat: -10.3, lng: -75.4},
+          zoom: 4.8
+        },     
+        'pt': {
+          center: {lat: 39.4, lng: -8.2},
+          zoom: 6
+        },
+        'sa': {
+          center: {lat: -13.62, lng: -172.47},
+          zoom: 8
+        },     
         'za': {
           center: {lat: -30.6, lng: 22.9},
           zoom: 4.5
@@ -50,18 +91,30 @@
           center: {lat: 40.5, lng: -3.7},
           zoom: 5
         },
-        'pt': {
-          center: {lat: 39.4, lng: -8.2},
-          zoom: 6
-        },
-        'us': {
-          center: {lat: 38.3, lng: -97.4},
-          zoom: 3.2
-        },  
+        'to': {
+          center: {lat: -21.2, lng: -175.1},
+          zoom: 10
+        },     
+        'tu': {
+          center: {lat: 34.0, lng: 9.3},
+          zoom: 5.5
+        },   
         'uk': {
           center: {lat: 54.3, lng: -3.3},
           zoom: 5
-        }
+        },
+        'ur': {
+          center: {lat: -32.8, lng: -56.3},
+          zoom: 5.5
+        },   
+        'us': {
+          center: {lat: 38.3, lng: -97.4},
+          zoom: 3.2
+        },
+        'zi': {
+          center: {lat: -19.0, lng: 29.4},
+          zoom: 5.5
+        }    
       };
 
 
@@ -110,6 +163,10 @@
         }
       }
 
+
+
+
+
 // Search for accomodation, art galleries, Museums, Bars and Restaurants  
 //  Google maps only allows you to search for one plaace type at a time
             
@@ -134,14 +191,22 @@
           clearMarkers();
           markers = []; 
           
+    
          
   
-          let search = {
+          var search = {
             
             bounds: map.getBounds(),
             types: [poi]
           };
-        
+          
+           
+          function myFunction() {
+            place.rating.sort();
+            document.getElementById("results").innerHTML = place.rating;
+          }
+
+    
     
           places.nearbySearch(search, function(results, status) {
            if (status === google.maps.places.PlacesServiceStatus.OK) {

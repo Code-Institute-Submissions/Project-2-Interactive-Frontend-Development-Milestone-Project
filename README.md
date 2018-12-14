@@ -54,6 +54,11 @@ o	JQuery is used to provide DOM manipulation.
 
 *-Code Testing-*
 
+I’ve tested the code in chrome, Firefox, Microsoft edge browser and safari as well as the mobile versions of these browsers.
+I used W3C for CSS https://jigsaw.w3.org/css-validator/and HTML https://validator.w3.org/ to remove errors.
+The email.js code in the booking form has been tested and functions properly.
+The Google Maps API has been setup to search for cities, towns & postcodes. 
+
 
 *-Code Deployment-*
 
@@ -71,13 +76,15 @@ The longitude and latitude coordinates beinf used for the map were obtained from
 
 *-Media-*
 The images used for each continent are all images founds from yahoo images, all the images licenses are Free to modify, share and use commerically
-Europe Image - https://upload.wikimedia.org/wikipedia/commons/9/9f/Old_Town_Square_Praga_01.jpg
-North America Image - https://www.flickr.com/photos/dipfan/932088080?ytcheck=1&new_session=1
-South America Image - https://www.flickr.com/photos/110331586@N06/11159285123
-Africa image - https://en.wikipedia.org/wiki/Clifton,_Cape_Town#/media/File:Clifton_Beachs.jpg
-Australia Image - https://3.bp.blogspot.com/-Y2Cv0ulZjVc/WNglvEFeFCI/AAAAAAAAJSY/cQshrHpVrNs_BsFahxsrFhgljD52Zd2gQCLcB/s1600/The%2BTop%2B21%2BCountries%2Bfor%2BQuality%2Bof%2BLife%2BHave%2BBeen%2BRanked%2B-%2BAustralia.jpg
-Oceania Image - https://en.wikivoyage.org/wiki/Queenstown-Lakes#/media/File:Lake_Hayes_by_queenstown.JPG
+Europe Image(europe-backgroundimage.jpg) - https://upload.wikimedia.org/wikipedia/commons/9/9f/Old_Town_Square_Praga_01.jpg
+North America Image(northamerica-backgroundimage.jpg) - https://www.flickr.com/photos/dipfan/932088080?ytcheck=1&new_session=1
+South America Image(southamerica-backgroundimage.jpg) - https://www.flickr.com/photos/110331586@N06/11159285123
+Africa image(africa-backgroundimage.jpg) - https://en.wikipedia.org/wiki/Clifton,_Cape_Town#/media/File:Clifton_Beachs.jpg
+Australia Image(australia-backgroundimage.jpg) - https://3.bp.blogspot.com/-Y2Cv0ulZjVc/WNglvEFeFCI/AAAAAAAAJSY/cQshrHpVrNs_BsFahxsrFhgljD52Zd2gQCLcB/s1600/The%2BTop%2B21%2BCountries%2Bfor%2BQuality%2Bof%2BLife%2BHave%2BBeen%2BRanked%2B-%2BAustralia.jpg
+Oceania Image(oceania-backgroundimage.jpg) - https://en.wikivoyage.org/wiki/Queenstown-Lakes#/media/File:Lake_Hayes_by_queenstown.JPG
 
+The plane image used within the title was found on yahoo images, the images license is Free to modify, share and use commerically
+plane image(Airplane.svg.png) - https://upload.wikimedia.org/wikipedia/commons/e/e9/Airplane.svg
 
 *-Acknowledgements-*
 
