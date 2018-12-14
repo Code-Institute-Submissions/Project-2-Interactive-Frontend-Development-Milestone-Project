@@ -90,14 +90,14 @@
     #country {
         width: 100%;
       }
-    @media screen and (max-width: 992px){      
+    @media screen and (max-width: 993px){      
       .placeIcon {
         width: 34px;
         height: 34px;
         margin: 4px;
       }
     }
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 993px){
     .placeIcon {
         width: 34px;
         height: 34px;
@@ -503,10 +503,10 @@
     /* Box styles */
     .myBox {
         border: none;
-        padding: 5px;
+        padding: 1px;
         font: 24px/36px sans-serif;
         overflow: scroll;
-        width: 30%;
+    
     }
     
     /* Scrollbar styles */
@@ -550,7 +550,7 @@
 
     /* listings */
     
-     @media screen and (min-width: 768px){
+     @media screen and (min-width: 992px){
     .col-sm-30percent {
         width: 30%;
         position: relative;
@@ -572,7 +572,7 @@
         }
     }
     
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 991px){
     .listing {
         max-height: 440px;
         overflow: auto;
@@ -584,7 +584,7 @@
       }
     }
     
-    @media screen and (min-device-width: 768px) and (max-device-width: 992px){
+    @media screen and (min-device-width: 768px) and (max-device-width: 991px){
     .listing {
         max-height: 440px;
         overflow: auto;
@@ -592,7 +592,7 @@
         overflow-x: hidden;
         margin-top: 50px;
         margin-bottom: 50px;
-      margin-right: 10%;
+     
       }
     }
         
@@ -617,7 +617,7 @@
 
     /* Results table */
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 992px){
     .resultsTable {
         border-collapse: collapse;
         width: 170%;
@@ -625,7 +625,7 @@
           }
       }
             
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 992px){
     .resultsTable{
         width: 100%;
         margin-bottom: 5% ;
