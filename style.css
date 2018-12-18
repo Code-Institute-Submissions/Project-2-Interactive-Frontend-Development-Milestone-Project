@@ -1,709 +1,870 @@
      /*------ layout ------*/
+
+     .body {
+         background-color: mintcream;
+         font-family: serif;
+     }
+
+     .header {}
+
+     .footer {
+         min-height: 200px
+     }
+
+
+     .title {
+         color: white;
+     }
+
+
+     h1 {
+         text-align: center;
+     }
+
+     h2 {
+         font-size: 20px;
+     }
      
-    .body{
-        background-color: mintcream;
-        font-family: serif;
-    }
-    
-    .header{
-     
-    }
-    
-    .footer{
-        min-height: 200px
-    }
-    
-    
-    .title{
-        color: white;
-    }
-    
-    
-    h1{
-       text-align: center; 
-    }
-    h2{
-        font-size: 20px;
-    }
-    
-    .contact-description{
-        text-align:center;
-        font-size:20px;
-    }
-    .contact-section{
-        width: 80%;
-       margin: 10%;
-    }
-    
-    .row {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    
-    .border-continentinfo {
-        margin-right: 0px;
-        margin-left: 0px;
-        border: solid;
-        background-color: antiquewhite;
-    }
-    
-    ol, ul {
-        margin-top: 0;
-        margin-bottom: 10px;
-        margin-left: 0px;
-        padding-left: 20px;
-    }
-
-      
-
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-    .margins-10px{
-        margin: 10px;
-        margin-bottom: -30px;
-      }
-
-
-    #locationField {
-        position: absolute;
-        width: 190px;
-        height: 25px;
-        left: 108px;
-        top: 0px;
-        z-index: 5;
-        background-color: #fff;
-      }
-      #controls {
-        left: 300px;
-        width: 140px;
-        top: 0px;
-        z-index: 5;
-        background-color: #fff;
-      }
-    #autocomplete {
-        width: 100%;
-      }
-    #country {
-        width: 100%;
-      }
-    @media screen and (max-width: 993px){      
-      .placeIcon {
-        width: 34px;
-        height: 34px;
-        margin: 4px;
-      }
-    }
-    @media screen and (min-width: 993px){
-    .placeIcon {
-        width: 34px;
-        height: 34px;
-        margin: 4px;
-        margin-right: -8px
-      }
-    }
-        @media screen and (min-width: 1200px){
-    .placeIcon {
-        width: 34px;
-        height: 34px;
-        margin: 4px;
-        margin-right: -15px
-      }
-    }
-    .hotelIcon {
-        width: 24px;
-        height: 24px;
-      }
-      
-    .imagelocationinfo{
-        text-align: right;
-        margin-right: 10px;
-        color: white;
-    }  
-      
-.imagetextposition{
-    bottom: -95%;
-    position: relative;
-}
-
-
-    /*continent layout*/
-    
-    @media screen and (min-width: 768px){
-    .travellocationslist{
-        margin-top: 5%;
-        padding: 0px;
-        margin-left: 20px;
-        font-size: 20px;
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-    .travellocationslist{
-        margin-top: 0px;
-        padding: 0px;
-        margin-left: 20px;
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    }
-
-     /*------ navbar ------*/
-    @media screen and (max-width: 768px){
-    .navbar{
-        background-color: blue;
-        color:  white;
-        margin: 0px;
-        margin-bottom: -10px;
-        border-color: blue;
-        font-size: 13px;
-    }
-    }
-    
-    @media screen and (min-device-width: 768px) and (max-device-width: 992px){
-    .navbar{
-        background-color: blue;
-        color:  white;
-        margin: 0px;
-        margin-bottom: -10px;
-        border-color: blue;
-        font-size: 13px;
-    }
-    }
-    @media screen and (min-width: 992px){
-    .navbar{
-        background-color: blue;
-        color:  white;
-        margin: 0px;
-        margin-bottom: -10px;
-        border-color: blue;
-        font-size: 18px;
-    }
-    }
-    
-    @media screen and (min-width: 1200px){
-    .navbar{
-        background-color: blue;
-        color:  white;
-        margin: 0px;
-        margin-bottom: -10px;
-        border-color: blue;
-        font-size: 23px;
-    }
-    }
-    
-    
-    @media screen and (max-width: 992px){
-    .navbar-title {
-        float: left;
-        height: 50px;
-        padding: 15px 15px;
-        font-size: 17px;
-        line-height: 20px;
-        color: white;
+     h3{
+         font-size: 24px;
+     }
+     @media screen and (min-width: 768px) and (max-width: 992px) {
+     h3{
+         font-size: 32px;
         }
     }
-        
-        
-    @media screen and (min-width: 992px){
-    .navbar-title {
-        float: left;
-        height: 50px;
-        padding: 15px 15px;
-        font-size: 22px;
-        line-height: 20px;
-        color: white;
-        }   
+         @media screen and (min-width: 992px) and (max-width: 1200px)  {
+     h3{
+         font-size: 36px;
+        }
     }
-    
-        @media screen and (min-width: 1200px){
-    .navbar-title {
-        float: left;
-        height: 50px;
-        padding: 15px 15px;
-        font-size: 27px;
-        line-height: 20px;
-        color: white;
-        }   
+             @media screen and (min-width: 1200px) {
+     h3{
+         font-size: 40px;
+        }
     }
-        
-    .navbar-nav{
-        background-color: blue;
-    }
-    
-    .navbar-default .navbar-brand {
-        color: white;    
-    }
-    
-    .navbar-default .navbar-nav>li>a {
-        color: white;
-    }
-    
-    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-        color: white;
-        
-    }
-    
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: white;
-    }
-    
-    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-        background-color: blue;
-    }
-    
-    
-    @media (min-width: 768px){
-    .navbar-collapse-custom {
-        display: block!important;
-        height: auto!important;
-        padding-bottom: 0;
-    }
-    }
-    @media (min-width: 768px){
-    .navbar-list{
-        position: relative; 
-        float: right;
-        padding: 9px 10px;
-        margin-top: 8px; 
-        margin-right:15px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        text-align:center;
-        width:100%;
-        left: 2%;
-    }
-    }
-    
-        @media (max-width: 768px){
-    .navbar-list{
-        padding: 9px 10px;
-        margin-top: 8px; 
-        margin-right:15px;
-        margin-bottom: 8px;
-        background-image: none;
-        text-align:center;
-        width:100%;
-        display:none;
-    }
-    }
-    @media (min-width: 768px){
-    .listspan{
-        display: none;
-    }
-    }
-    
-    
-    @media (max-width: 768px){
-    .listspan{
-        font-size:20px;
-    }
-    }
+
+     .contact-description {
+         text-align: center;
+         font-size: 20px;
+     }
+
+     .contact-section {
+         width: 80%;
+         margin: 10%;
+     }
+
+     .row {
+         margin-right: 0px;
+         margin-left: 0px;
+         margin-bottom: 10px;
+     }
+
+     .border-continentinfo {
+         margin-right: 0px;
+         margin-left: 0px;
+         border: solid;
+         background-color: antiquewhite;
+     }
+
+     ol,
+     ul {
+         margin-top: 0;
+         margin-bottom: 10px;
+         margin-left: 0px;
+         padding-left: 20px;
+     }
+
+
+
+     html,
+     body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+     }
+
+     .margins-10px {
+         margin: 10px;
+         margin-bottom: -30px;
+     }
+
+
+     #locationField {
+         position: absolute;
+         width: 190px;
+         height: 25px;
+         left: 108px;
+         top: 0px;
+         z-index: 5;
+         background-color: #fff;
+     }
+
+     #controls {
+         left: 300px;
+         width: 140px;
+         top: 0px;
+         z-index: 5;
+         background-color: #fff;
+     }
+
+     #autocomplete {
+         width: 100%;
+     }
+
+     #country {
+         width: 100%;
+     }
+
+     @media screen and (max-width: 993px) {
+         .placeIcon {
+             width: 34px;
+             height: 34px;
+             margin: 4px;
+         }
+     }
+
+     @media screen and (min-width: 993px) {
+         .placeIcon {
+             width: 34px;
+             height: 34px;
+             margin: 4px;
+             margin-right: 10px
+         }
+     }
+
+     @media screen and (min-width: 1200px) {
+         .placeIcon {
+             width: 34px;
+             height: 34px;
+             margin: 4px;
+             margin-right: 10px
+         }
+     }
+
+     .hotelIcon {
+         width: 24px;
+         height: 24px;
+     }
+
+     .imagelocationinfo {
+         text-align: right;
+         margin-right: 10px;
+         color: white;
+     }
+
+     .imagetextposition {
+         bottom: -95%;
+         position: relative;
+     }
+
+
+     /*continent layout*/
+
+
+
+     @media screen and (max-width: 650px) {
+         .travellocationslist {
+             margin-top: 0px;
+             padding: 0px;
+             margin-left: 20px;
+             font-size: 20px;
+             margin-bottom: 10px;
+         }
+     }
+     
+     
+     @media screen and (min-width: 650px) and (max-width: 768px) {
+         .travellocationslist {
+             margin-top: 0px;
+             padding: 0px;
+             margin-left: 20px;
+             font-size: 24px;
+             margin-bottom: 10px;
+         }
+     }
+     
+     @media screen and (min-width: 768px) and (max-width: 992px){
+         .travellocationslist {
+             margin-top: 5%;
+             padding: 0px;
+             margin-left: 24px;
+             font-size: 28px;
+         }
+     }
+          
+     @media screen and (min-width: 992px) and (max-width: 1200px) {
+         .travellocationslist {
+             margin-top: 5%;
+             padding: 0px;
+             margin-left: 24px;
+             font-size: 32px;
+         }
+     }
+     @media screen and (min-width: 1200px) {
+         .travellocationslist {
+             margin-top: 5%;
+             padding: 0px;
+             margin-left: 24px;
+             font-size: 36px;
+         }
+     }
+
+
+     /*------ navbar ------*/
+
+
+     @media screen and (max-width: 768px) {
+         .navbar {
+             background-color: blue;
+             color: white;
+             margin: 0px;
+             margin-bottom: -10px;
+             border-color: blue;
+             font-size: 13px;
+         }
+     }
+
+     @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
+         .navbar {
+             background-color: blue;
+             color: white;
+             margin: 0px;
+             margin-bottom: -10px;
+             border-color: blue;
+             font-size: 13px;
+         }
+     }
+
+     @media screen and (min-width: 992px) {
+         .navbar {
+             background-color: blue;
+             color: white;
+             margin: 0px;
+             margin-bottom: -10px;
+             border-color: blue;
+             font-size: 18px;
+         }
+     }
+
+     @media screen and (min-width: 1200px) {
+         .navbar {
+             background-color: blue;
+             color: white;
+             margin: 0px;
+             margin-bottom: -10px;
+             border-color: blue;
+             font-size: 23px;
+         }
+     }
+
+
+     @media screen and (max-width: 992px) {
+         .navbar-title {
+             float: left;
+             height: 50px;
+             padding: 15px 15px;
+             font-size: 17px;
+             line-height: 20px;
+             color: white;
+         }
+     }
+
+
+     @media screen and (min-width: 992px) {
+         .navbar-title {
+             float: left;
+             height: 50px;
+             padding: 15px 15px;
+             font-size: 22px;
+             line-height: 20px;
+             color: white;
+         }
+     }
+
+     @media screen and (min-width: 1200px) {
+         .navbar-title {
+             float: left;
+             height: 50px;
+             padding: 15px 15px;
+             font-size: 27px;
+             line-height: 20px;
+             color: white;
+         }
+     }
+
+     .navbar-nav {
+         background-color: blue;
+     }
+
+     .navbar-default .navbar-brand {
+         color: white;
+     }
+
+     .navbar-default .navbar-nav>li>a {
+         color: white;
+     }
+
+     .navbar-default .navbar-nav>.active>a,
+     .navbar-default .navbar-nav>.active>a:focus,
+     .navbar-default .navbar-nav>.active>a:hover {
+         color: white;
+
+     }
+
+     .navbar-default .navbar-toggle .icon-bar {
+         background-color: white;
+     }
+
+     .navbar-default .navbar-toggle:focus,
+     .navbar-default .navbar-toggle:hover {
+         background-color: blue;
+     }
+
+
+     @media (min-width: 768px) {
+         .navbar-collapse-custom {
+             display: block!important;
+             height: auto!important;
+             padding-bottom: 0;
+         }
+     }
+
+     @media (min-width: 768px) {
+         .resultslist {
+             position: relative;
+             padding-right: 10px;
+             padding-left: 10px;
+             margin-right: 15px;
+             background-color: transparent;
+             border: 1px solid transparent;
+             border-radius: 4px;
+             text-align: center;
+             width: 100%;
+
+         }
+     }
+
+     @media (max-width: 768px) {
+         .resultslist {
+             text-align: center;
+             width: 100%;
+             border-radius: 0px;
+             margin-bottom: 10px;
+         }
+     }
+
+     @media (min-width: 768px) {
+         .listspan {
+             display: none;
+         }
+     }
+
+
+     @media (max-width: 768px) {
+         .listspan {
+             font-size: 20px;
+         }
+     }
 
 
      /*------ Image ------*/
-    
-    @media screen and (min-width: 768px){
-    .destinationcontainer{
-        border: solid;
-        padding: 10px;
-        border-radius: 100px;
-        min-height: 500px;
-        background-color: white;
-        }
-    }
-    
-    @media screen and (max-width: 768px){
-    .destinationcontainer{
-        min-height: 500px;
-        background-color: white;
-        padding-top: 5px;
-        max-width: 100%;
-    }
-    }
 
-    @media screen and (min-width: 991px){
-    .mapscontainer{
-        border: solid;
-        min-height: 440px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        max-width: 50%;
-       margin-left: 10%;
-        }
-    }
-    
-    @media screen and (max-width: 991px){
-    .mapscontainer{
-        border: solid;
-        min-height: 300px;
-    }
-    }
-    
-    
-    @media (min-width: 991px){
-    .mapwidth {
-        width: 50%;
-        float: left;
-    }
-    }
+     @media screen and (min-width: 768px) {
+         .destinationcontainer {
+             border: solid;
+             padding: 10px;
+             border-radius: 100px;
+             min-height: 500px;
+             background-color: white;
+         }
+     }
 
-    @media (max-width: 992px){
-    .mapwidth {
-        width: 100%;
-    }
-    }
+     @media screen and (max-width: 768px) {
+         .destinationcontainer {
+             min-height: 500px;
+             background-color: white;
+             padding-top: 5px;
+             max-width: 100%;
+         }
+     }
 
+     @media screen and (max-device-width: 991px) {
+         .mapscontainer {
+             border: solid;
+             min-height: 300px;
+         }
+     }
+
+     @media screen and (min-width: 991px) {
+         .mapscontainer {
+             border: solid;
+             min-height: 440px;
+             margin-top: 50px;
+
+         }
+     }
+
+
+     /*---mapwidth---*/
+
+     @media (min-width: 991px) {
+         .mapwidth {
+             width: 100%;
+         }
+     }
+
+     @media (max-width: 992px) {
+         .mapwidth {
+             width: 100%;
+         }
+     }
 
 
 
-    /*---google maps background images---*/
-    
-    @media screen and (min-width: 768px){
-    .beachholiday-backgroundimage{
-        background: url("/assets/images/beachholiday.jpg") no-repeat center top;
-        min-height: 750px;
-        background-size: cover;
-        padding-top: 8%;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 8%;
-    }
-    }
-    @media screen and (min-width: 768px){
-    .backgroundimage-orientation{
-        min-height: 400px;
-        background-size: cover;
-        margin: 5%;
-        float: left;
-        width:60%;
-    }
-    }
-    @media screen and (max-width: 768px){
-    .backgroundimage-orientation{
-        background-size: cover;
-        min-height: 250px;
-        min-width: 60%;
-        margin: 10px;
-    }
-    }
 
-    /*--- europe background images---*/
-    
-    @media screen and (min-width: 768px){
-    .europe-backgroundimage{
-        background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
-        background-position-y: bottom;
-        background-size: cover;
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-    .europe-backgroundimage{
-        background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
-        background-position-y: bottom;
-        background-size: cover;
-        
-    }
-    }
-    
-    
-    /*--- North America background images---*/
-    
-    @media screen and (min-width: 768px){
-    .northamerica-backgroundimage{
-        background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
-        background-position-y: center;
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-    .northamerica-backgroundimage{
-        background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
-        background-position-y: center;
-        background-size: cover;
-    }
-    }
-    
-    /*--- South America background images---*/
-    
-    @media screen and (min-width: 768px){
-    .southamerica-backgroundimage{
-        background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
-        background-position-y: bottom;
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-    .southamerica-backgroundimage{
-        background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
-        background-position-y: bottom;
-        background-size: cover;
-    }
-    }
+     /*---google maps background images---*/
 
-    /*--- Africa background images---*/
-    
-    @media screen and (min-width: 768px){
-    .africa-backgroundimage{
-        background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
-    
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-    .africa-backgroundimage{
-        background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
-        background-size: cover;
-    
-    }
-    }
-    
-    /*--- australia  background images---*/
-    
-    @media screen and (min-width: 768px){
-    .australia-backgroundimage{
-        background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
-        background-position-y: 70%;
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-    .australia-backgroundimage{
-        background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
-        background-position-y: 70%;
-        background-size: cover;
-    }
-    }
-
-    /*--- oceania  background images---*/
-    
-    @media screen and (min-width: 768px){
-    .oceania-backgroundimage{
-        background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
-        background-position-y: center;
-    }
-    }
-    
-    @media screen and (max-width: 768px){
-    .oceania-mobile-backgroundimage{
-        background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
-        background-position-y: center;
-        background-size: cover;
-    }
-    }
-    
-
-    /* Box styles */
-    .myBox {
-        border: none;
-        padding: 1px;
-        font: 24px/36px sans-serif;
-        overflow: scroll;
-    
-    }
-    
-    /* Scrollbar styles */
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: #f5f5f5;
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background: #ccc;  
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        background: #999;  
-    }
-    
-    /* map */
- 
-    @media screen and (min-width: 768px){
-    #map {
-        height: 100%;
-        max-height:440px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      }
-    }
-    @media screen and (max-width: 768px){
-    #map {
-        height: 100%;
-        max-height:440px;
-        margin-top: 50px;
-    
-      }
-    }
-      
-
-    /* listings */
-    
-     @media screen and (min-width: 992px){
-    .col-sm-30percent {
-        width: 30%;
-        position: relative;
-        min-height: 1px;
-        }
-        }
-    
-    @media screen and (min-width: 768px){
-    .maplistingbackground{
-        background-color: antiquewhite;
-        border-radius: 30px;
-        padding: 5px;
-        }
-    }
-    
-    @media screen and (max-width: 768px){
-    .maplistingbackground{
-        background-color: antiquewhite;
-        }
-    }
-    
-    @media screen and (min-width: 991px){
-    .listing {
-        max-height: 440px;
-        overflow: auto;
-        cursor: pointer;
-        overflow-x: hidden;
-        margin-top: 50px;
-        margin-bottom: 50px;
-      margin-right: 10%;
-      }
-    }
-    
-    @media screen and (min-device-width: 768px) and (max-device-width: 991px){
-    .listing {
-        max-height: 440px;
-        overflow: auto;
-        cursor: pointer;
-        overflow-x: hidden;
-        margin-top: 50px;
-        margin-bottom: 50px;
+     @media screen and (min-width: 768px) {
+         .beachholiday-backgroundimage {
+             background: url("/assets/images/beachholiday.jpg") no-repeat center top;
+             min-height: 750px;
+             background-size: cover;
+             padding-top: 8%;
+             padding-left: 5%;
+             padding-right: 5%;
+             padding-bottom: 8%;
+         }
+     }
      
-      }
-    }
-        
-        
-    @media screen and (max-width: 768px){
-    .listing {
-        width: 100%;
-        max-height: 440px;
-        overflow: auto;
-        cursor: pointer;
-        overflow-x: hidden;
-        margin-bottom: 50px;
-        padding: 0px;
-      }
-    }
-    
-    /* Results table button */
-    
-      
-   
+     
+          
+     @media screen and (max-width: 280px) {
+         .backgroundimage-orientation {
+             background-size: cover;
+             min-height: 150px;
+             min-width: 60%;
+             margin: 10px;
+         }
+     }
+          
+          
+     @media screen and (min-width: 280px) and  (max-width: 330px) {
+         .backgroundimage-orientation {
+             background-size: cover;
+             min-height: 170px;
+             min-width: 60%;
+             margin: 10px;
+         }
+     }
+               
+     @media screen and (min-width: 330px) and  (max-width: 360px) {
+         .backgroundimage-orientation {
+             background-size: cover;
+             min-height: 180px;
+             min-width: 60%;
+             margin: 10px;
+         }
+     }
+               
+     @media screen and (min-width: 360px) and  (max-width: 380px) {
+         .backgroundimage-orientation {
+             background-size: cover;
+             min-height: 200px;
+             min-width: 60%;
+             margin: 10px;
+         }
+     }
+               
+     @media screen and (min-width: 380px) and  (max-width: 425px) {
+         .backgroundimage-orientation {
+             background-size: cover;
+             min-height: 220px;
+             min-width: 60%;
+             margin: 10px;
+         }
+     }
+               
+     @media screen and (min-width: 425px) and  (max-width: 450px) {
+         .backgroundimage-orientation {
+             background-size: cover;
+             min-height: 230px;
+             min-width: 60%;
+             margin: 10px;
+         }
+     }
 
 
-    /* Results table */
+          @media screen and (min-width: 450px) and (max-device-width: 650px)  {
+         .backgroundimage-orientation {
+             min-height: 200px;
+             background-size: cover;
+             margin: 5%;
+             float: left;
+             width: 60%;
+         }
+     }
 
-    @media screen and (min-width: 992px){
-    .resultsTable {
-        border-collapse: collapse;
-        width: 170%;
-      
-          }
-      }
-            
-    @media screen and (max-width: 992px){
-    .resultsTable{
-        width: 100%;
-        margin-bottom: 5% ;
-      }
-    }
+     
+          @media screen and (min-width: 650px) and (max-device-width: 850px)   {
+         .backgroundimage-orientation {
+             min-height: 250px;
+             background-size: cover;
+             margin: 5%;
+             float: left;
+             width: 60%;
+         }
+     }
+          @media screen and (min-width: 850px) and (max-device-width: 950px)  {
+         .backgroundimage-orientation {
+             min-height: 300px;
+             background-size: cover;
+             margin: 5%;
+             float: left;
+             width: 60%;
+         }
+     }
+          @media screen and (min-width: 950px)and (max-device-width: 992px)  {
+         .backgroundimage-orientation {
+             min-height: 330px;
+             background-size: cover;
+             margin: 5%;
+             float: left;
+             width: 60%;
+         }
+     }
+     
+          @media screen and (min-width: 992px) {
+         .backgroundimage-orientation {
+             min-height: 350px;
+             background-size: cover;
+             margin: 5%;
+             float: left;
+             width: 60%;
+         }
+     }
 
-    /* Results table contents */
 
-    table {
-        font-size: 12px;
-      }
-      
 
-    .iw_table_row {
-        height: 18px;
-      }
-    .iw_attribute_name {
-        font-weight: bold;
-        text-align: right;
-      }
-    .iw_table_icon {
-        text-align: right;
-      }
-      
-      
-      
-   /* Star Ratings */    
-   
-    .rate-area {
-        border-style: none;
-    }
-    
-    .rate-area:not(:checked)>input {
-        position: absolute;
-        top: -9999px;
-        clip: rect(0, 0, 0, 0);
-    }
-    
-    .rate-area:not(:checked)>label {
-        float: right;
-        width: 1em;
-        padding: 0 .1em;
-        overflow: hidden;
-        white-space: nowrap;
-        cursor: pointer;
-        font-size: 150%;
-        line-height: 1.2;
-        color: lightgrey;
-        text-shadow: 1px 1px #bbb;
-    }
-    
-    .rate-area:not(:checked)>label:before {
-        content: '★ ';
-    }
-    
-    .rate-area>input:checked~label {
-        color: gold;
-        text-shadow: 1px 1px #c60;
-        font-size: 150% !important;
-    }
-    
-    .rate-area:not(:checked)>label:hover,
-    .rate-area:not(:checked)>label:hover~label {
-        color: gold;
-    }
-    
-    .rate-area>input:checked+label:hover,
-    .rate-area>input:checked+label:hover~label,
-    .rate-area>input:checked~label:hover,
-    .rate-area>input:checked~label:hover~label,
-    .rate-area>label:hover~input:checked~label {
-        color: gold;
-        text-shadow: 1px 1px goldenrod;
-    }
-    
-    .rate-area>label:active {
-        position: relative;
-        top: 2px;
-        left: 2px;
-    }
 
+
+     /*--- europe background images---*/
+
+     @media screen and (min-width: 768px) {
+         .europe-backgroundimage {
+             background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
+             background-position-y: bottom;
+             background-size: cover;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         .europe-backgroundimage {
+             background: url("/assets/images/europe-backgroundimage.jpg") no-repeat center top;
+             background-position-y: bottom;
+             background-size: cover;
+
+         }
+     }
+
+
+     /*--- North America background images---*/
+
+     @media screen and (min-width: 768px) {
+         .northamerica-backgroundimage {
+             background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
+             background-position-y: center;
+             background-size: cover;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         .northamerica-backgroundimage {
+             background: url("/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
+             background-position-y: center;
+             background-size: cover;
+         }
+     }
+
+     /*--- South America background images---*/
+
+     @media screen and (min-width: 768px) {
+         .southamerica-backgroundimage {
+             background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
+             background-position-y: bottom;
+             background-size: cover;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         .southamerica-backgroundimage {
+             background: url("/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
+             background-position-y: bottom;
+             background-size: cover;
+         }
+     }
+
+     /*--- Africa background images---*/
+
+     @media screen and (min-width: 768px) {
+         .africa-backgroundimage {
+             background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
+            background-size: cover;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         .africa-backgroundimage {
+             background: url("/assets/images/africa-backgroundimage.jpg") no-repeat center top;
+             background-size: cover;
+
+         }
+     }
+
+     /*--- australia  background images---*/
+
+     @media screen and (min-width: 768px) {
+         .australia-backgroundimage {
+             background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
+             background-position-y: 70%;
+             background-size: cover;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         .australia-backgroundimage {
+             background: url("/assets/images/australia-backgroundimage.jpg") no-repeat center top;
+             background-position-y: 70%;
+             background-size: cover;
+         }
+     }
+
+     /*--- oceania  background images---*/
+
+     @media screen and (min-width: 768px) {
+         .oceania-backgroundimage {
+             background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
+             background-position-y: center;
+             background-size: cover;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         .oceania-mobile-backgroundimage {
+             background: url("/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
+             background-position-y: center;
+             background-size: cover;
+         }
+     }
+
+
+     /* Box styles */
+
+     .myBox {
+         border: none;
+         padding: 0px;
+         font: 24px/36px sans-serif;
+         overflow: scroll;
+
+     }
+
+     /* Scrollbar styles */
+
+     ::-webkit-scrollbar {
+         width: 10px;
+     }
+
+     ::-webkit-scrollbar-track {
+         background: #f5f5f5;
+         border-radius: 10px;
+     }
+
+     ::-webkit-scrollbar-thumb {
+         border-radius: 10px;
+         background: #ccc;
+     }
+
+     ::-webkit-scrollbar-thumb:hover {
+         background: #999;
+     }
+
+     /* map */
+
+     @media screen and (min-width: 768px) {
+         #map {
+             height: 100%;
+             max-height: 440px;
+             margin-top: 50px;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         #map {
+             height: 100%;
+             max-height: 440px;
+             margin-top: 50px;
+
+         }
+     }
+
+
+     /* listings */
+
+     @media screen and (min-width: 992px) {
+         .col-sm-percent {
+             width: 100%;
+             position: relative;
+             min-height: 1px;
+         }
+     }
+
+     @media screen and (min-width: 768px) {
+         .maplistingbackground {
+             background-color: antiquewhite;
+             border-radius: 30px;
+             padding: 5px;
+         }
+     }
+
+     @media screen and (max-width: 768px) {
+         .maplistingbackground {
+             background-color: antiquewhite;
+         }
+     }
+
+     @media screen and (min-width: 991px) {
+         .listing {
+             max-height: 440px;
+             overflow: auto;
+             cursor: pointer;
+             overflow-x: hidden;
+             margin-bottom: 50px;
+             margin-right: 10%;
+         }
+     }
+
+     @media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+         .listing {
+             max-height: 440px;
+             overflow: auto;
+             cursor: pointer;
+             overflow-x: hidden;
+             margin-bottom: 50px;
+
+         }
+     }
+
+
+     @media screen and (max-width: 768px) {
+         .listing {
+             width: 100%;
+             max-height: 440px;
+             overflow: auto;
+             cursor: pointer;
+             overflow-x: hidden;
+             margin-bottom: 50px;
+             padding: 0px;
+         }
+     }
+
+
+     a:focus,
+     a:hover {
+         color: black;
+         text-decoration: none;
+     }
+
+     /* Results table */
+
+     @media screen and (min-width: 992px) {
+         .resultsTable {
+             border-collapse: collapse;
+             width: 100%;
+             color: black;
+         }
+     }
+
+     @media screen and (max-width: 992px) {
+         .resultsTable {
+             width: 100%;
+             margin-bottom: 5%;
+             color: black;
+         }
+     }
+
+
+     /* Results table content */
+
+     .iw_table_row {
+         height: 18px;
+     }
+
+     .iw_attribute_name {
+         font-weight: bold;
+         text-align: right;
+     }
+
+     .iw_table_icon {
+         text-align: right;
+     }
+
+
+
+     /* Star Ratings */
+
+     .rate-area {
+         border-style: none;
+     }
+
+     .rate-area:not(:checked)>input {
+         position: absolute;
+         top: -9999px;
+         clip: rect(0, 0, 0, 0);
+     }
+
+     .rate-area:not(:checked)>label {
+         float: right;
+         width: 1em;
+         padding: 0 .1em;
+         overflow: hidden;
+         white-space: nowrap;
+         cursor: pointer;
+         font-size: 150%;
+         line-height: 1.2;
+         color: lightgrey;
+         text-shadow: 1px 1px #bbb;
+     }
+
+     .rate-area:not(:checked)>label:before {
+         content: '★ ';
+     }
+
+     .rate-area>input:checked~label {
+         color: gold;
+         text-shadow: 1px 1px #c60;
+         font-size: 150% !important;
+     }
+
+     .rate-area:not(:checked)>label:hover,
+     .rate-area:not(:checked)>label:hover~label {
+         color: gold;
+     }
+
+     .rate-area>input:checked+label:hover,
+     .rate-area>input:checked+label:hover~label,
+     .rate-area>input:checked~label:hover,
+     .rate-area>input:checked~label:hover~label,
+     .rate-area>label:hover~input:checked~label {
+         color: gold;
+         text-shadow: 1px 1px goldenrod;
+     }
+
+     .rate-area>label:active {
+         position: relative;
+         top: 2px;
+         left: 2px;
+     }
+     
+     
+     
+     

@@ -1,306 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="shortcut icon" type="image/png" href="/static/favicon.png"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css" type="text/css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-        <script>
-            (function() {
-                emailjs.init("user_cB800O5kK9g8jFnOQcPyU");
-            })();
-        </script>
-        <title class="title">SimpleTravel</title>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("user_cB800O5kK9g8jFnOQcPyU");
+        })();
+    </script>
+    <title class="title">SimpleTravel</title>
 </head>
-    <body class="body">
-      <div class="row">
-      <div class="col-xs col-sm col-md col-lg">
-        <header class="header">
-          <nav id="navbar-default" class="navbar navbar-default navbarFixed">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-title" href="index.html"><img  src="/assets/images/Airplane.svg.png" alt="plane" height="30" width="30" style="margin-top:-8px;margin-right:5px;"/>SimpleTravel</a>
-              </div>
-        
-            <!-- Navbar -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li><a href="#europe">Europe <span class="sr-only">(current)</span></a></li>
-                <li><a href="#northamerica">North America</a></li>
-                <li><a href="#southamerica">South America</a></li>
-                <li><a href="#africa">Africa</a></li>
-                <li><a href="#australia/oceania">Australia/Oceania</a></li>
-              </ul>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-        </header>
-        <section class="beachholiday-backgroundimage">
-            <div class="maplistingbackground">
-            <div class="margins-10px">
-    <div class="container-search">
-      <div >
-<h1>Travel search</h1>
-        <div>
-             Search for a place (example city, town or postcode )
-        </div>
-        <input  id="autocomplete" type="text" placeholder="Start typing here" name="answer"   onclick="showSpan()"/>
-        
-
-    <div id="controls">
-      <select id="country">
-        <option value="ar">Argentina</option>
-        <option value="au">Australia</option>
-        <option value="ba">Bahamas</option>
-        <option value="br">Brazil</option>
-        <option value="ca">Canada</option>
-        <option value="ch">Chile</option>
-        <option value="cu">Cuba</option>
-        <option value="cz">Czech Republic</option>
-        <option value="fi">Fiji</option>
-        <option value="fr">France</option>
-        <option value="de">Germany</option>
-        <option value="ke">Kenya</option>
-        <option value="mx">Mexico</option>
-        <option value="mo">Morocco</option>
-        <option value="nz">New Zealand</option>
-        <option value="it">Italy</option>
-        <option value="pe">Peru</option>
-        <option value="pt">Portugal</option>
-        <option value="sa">Samoa</option>
-        <option value="za">South Africa</option>
-        <option value="es">Spain</option>
-        <option value="to">Tonga</option>
-        <option value="tu">Tunisa</option>
-        <option value="uk" selected>United Kingdom</option>
-        <option value="ur">Uruguay</option>
-        <option value="us">U.S.A.</option>
-        <option value="zi">Zimbabwe</option>
-      </select>
-    </div>
-    </div>
-            
-
-    </div>
-
-    <div style="display: none">
-      <div id="info-content">
-        <table>
-          <tr id="iw-url-row" class="iw_table_row">
-            <td id="iw-icon" class="iw_table_icon"></td>
-            <td id="iw-url"></td>
-          </tr>
-          <tr id="iw-address-row" class="iw_table_row">
-            <td class="iw_attribute_name">Address:</td>
-            <td id="iw-address"></td>
-          </tr>
-          <tr id="iw-phone-row" class="iw_table_row">
-            <td class="iw_attribute_name">Telephone:</td>
-            <td id="iw-phone"></td>
-          </tr>
-          <tr id="iw-rating-row" class="iw_table_row">
-            <td class="iw_attribute_name">Rating:</td>
-            <td id="iw-rating"></td>
-          </tr>
-          <tr id="iw-website-row" class="iw_table_row">
-            <td class="iw_attribute_name">Website:</td>
-            <td id="iw-website"></td>
-          </tr>
-        </table>
-      </div>
-    </div>    
-
-    <!-- place type search  -->
-   <div id="placestoggle" class="pac-controls" style="margin-top: 10px;">
-     <div id="places"></div>
-         <!-- Google maps only allows you to search for one plaace type at a time  -->
-          <input onchange="search()"  type="radio" id="lodging" name="option" checked="checked" disabled />
-          <label for="lodging">Hotels</label>
-     
-          <input onchange="search()"  type="radio" id="art_gallery" name="option" disabled />
-          <label for="art_gallery">Art Galleries</label>
-           
-          <input onchange="search()"  type="radio" id="museum" name="option" disabled />
-          <label for="museum">Museums</label>
-
-          <input onchange="search()"  type="radio" id="bar" name="option" disabled />
-          <label for="bar">Bars</label>
-           
-          <input onchange="search()"  type="radio" id="restaurant" name="option" disabled />
-          <label for="restaurant">Restaurants</label>
-
-           <input onchange="search()"  type="radio" id="cafe" name="option" disabled />
-          <label for="restaurant">Cafes</label>
-
-
- 
-       </div>
-
-
-   </div>
-   <div class="row">
-   <div  class="col-xs col-sm col-md " style="width: 100%;">
-       
-    <div id="map" class="mapscontainer mapwidth"></div>
-     
-    <div>
-        <div class="row">
+<body class="body">
+                <header class="header">
+                <!-- Navbar -->
+            </header>
+                            <nav id="navbar-sticky" class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-title" href="index.html"><img  src="/assets/images/Airplane.svg.png" alt="plane" height="30" width="30" style="margin-top:-8px;margin-right:5px;"/>SimpleTravel</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#europe">Europe <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#northamerica">North America</a></li>
+                                <li><a href="#southamerica">South America</a></li>
+                                <li><a href="#africa">Africa</a></li>
+                                <li><a href="#australia/oceania">Australia/Oceania</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+    <div class="row">
         <div class="col-xs col-sm col-md col-lg">
-            <button type="button" class="navbar-list" data-toggle="collapse" data-target="#list" id="welcomeSpan" >
-            <span class="listspan">listings</span>                     
-            </button>
-        <div class="collapse navbar-collapse-custom listing col-sm-30percent myBox" id="list">
-          <table class=" resultsTable" id="myTable">
-            <button onclick="myFunction()" style="width:200px;height:50px">Order</button>
-                <tbody id="results" ></tbody>
-          </table>
-        </div>
-      </div>
-      </div>
-    </div>
-    </div>
-</div>
-</div>
-</section>
+            <section class="beachholiday-backgroundimage">
+                <div class="maplistingbackground">
+                    <div class="margins-10px">
+                        <div class="container-search">
+                            <div>
+                                <h1>Travel search</h1>
+                                <div id="searchresults">
+                                    Search for a place (example city, town or postcode )
+                                </div>
+                                <input id="autocomplete" type="search" placeholder="Start typing here" name="answer" onclick="myFunction()" />
+                                <!-- List of selectable countries -->
+                                <div id="controls">
+                                    <select id="country">
+                            <option value="ar">Argentina</option>
+                            <option value="au">Australia</option>
+                            <option value="ba">Bahamas</option>
+                            <option value="br">Brazil</option>
+                            <option value="ca">Canada</option>
+                            <option value="ch">Chile</option>
+                            <option value="cu">Cuba</option>
+                            <option value="cz">Czech Republic</option>
+                            <option value="fi">Fiji</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="ke">Kenya</option>
+                            <option value="mx">Mexico</option>
+                            <option value="mo">Morocco</option>
+                            <option value="nz">New Zealand</option>
+                            <option value="it">Italy</option>
+                            <option value="pe">Peru</option>
+                            <option value="pt">Portugal</option>
+                            <option value="sa">Samoa</option>
+                            <option value="za">South Africa</option>
+                            <option value="es">Spain</option>
+                            <option value="to">Tonga</option>
+                            <option value="tu">Tunisa</option>
+                            <option value="uk" selected>United Kingdom</option>
+                            <option value="ur">Uruguay</option>
+                            <option value="us">U.S.A.</option>
+                            <option value="zi">Zimbabwe</option>
+                          </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- marker location information -->
+                        <div style="display: none">
+                            <div id="info-content">
+                                <table>
+                                    <tr id="iw-url-row" class="iw_table_row">
+                                        <td id="iw-icon" class="iw_table_icon"></td>
+                                        <td id="iw-url"></td>
+                                    </tr>
+                                    <tr id="iw-address-row" class="iw_table_row">
+                                        <td class="iw_attribute_name">Address:</td>
+                                        <td id="iw-address"></td>
+                                    </tr>
+                                    <tr id="iw-phone-row" class="iw_table_row">
+                                        <td class="iw_attribute_name">Telephone:</td>
+                                        <td id="iw-phone"></td>
+                                    </tr>
+                                    <tr id="iw-rating-row" class="iw_table_row">
+                                        <td class="iw_attribute_name">Rating:</td>
+                                        <td id="iw-rating"></td>
+                                    </tr>
+                                    <tr id="iw-website-row" class="iw_table_row">
+                                        <td class="iw_attribute_name">Website:</td>
+                                        <td id="iw-website"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- place type search  -->
+                        <div id="placestoggle" class="pac-controls" style="margin-top: 10px;">
+                            <div id="places"></div>
+                            <!-- Google maps only allows you to search for one place type at a time  -->
+                            <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" disabled />
+                            <label for="lodging">Hotels</label>
+
+                            <input onchange="search()" type="radio" id="art_gallery" name="option" disabled />
+                            <label for="art_gallery">Art Galleries</label>
+
+                            <input onchange="search()" type="radio" id="museum" name="option" disabled />
+                            <label for="museum">Museums</label>
+
+                            <input onchange="search()" type="radio" id="bar" name="option" disabled />
+                            <label for="bar">Bars</label>
+
+                            <input onchange="search()" type="radio" id="restaurant" name="option" disabled />
+                            <label for="restaurant">Restaurants</label>
+
+                            <input onchange="search()" type="radio" id="cafe" name="option" disabled />
+                            <label for="cafe">Cafes</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs col-sm col-md col-lg" style="width: 100%;">
+                            <!-- Map -->
+                            <div id="map" class="mapscontainer mapwidth"></div>
+                            <!-- list of search results -->
+                            <div type="button" id="listexpand" class="listspan resultslist" data-toggle="collapse" data-target="#listing" style="width:100%;"></div>
+                            <a href="#searchresults" class="searchresults">
+                                <div class="collapse navbar-collapse-custom listing col-sm-percent myBox" id="listing">
+                                    <table class="resultsTable">
+                                        <tbody id="results"></tbody>
+                                    </table>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <hr>
+            <!-- list of countries searchable in Europe -->
             <section id="europe">
-                <div><h1>Europe</h1></div>
-                <div class="row border-continentinfo">
-                <div class="europe-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Old Town square in prague. Czech Republic</p></div></div>
-                <div class="travellocationslist ">
-                    <h3>Travel locations</h3>
-                    <ul>
-                    <li>Czech Republic</li>
-                    <li>France</li>
-                    <li>Italy</li>
-                    <li>Portugal</li>
-                    <li>Spain</li>
-                    <li>Uk</li>
-                    </ul>
+                <div>
+                    <h1>Europe</h1>
                 </div>
+                <div class="row border-continentinfo">
+                    <!-- Image displaying Old Town square in prague. Czech Republic -->
+                    <div class="europe-backgroundimage backgroundimage-orientation">
+                        <div class="imagelocationinfo">
+                            <p class="imagetextposition">Old Town square in prague. Czech Republic</p>
+                        </div>
+                    </div>
+                    <div class="travellocationslist ">
+                        <h3>Travel locations</h3>
+                        <ul>
+                            <li>Czech Republic</li>
+                            <li>France</li>
+                            <li>Italy</li>
+                            <li>Portugal</li>
+                            <li>Spain</li>
+                            <li>Uk</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <hr>
+            <!-- list of countries searchable in North America -->
             <section id="northamerica">
-                <div><h1>North America</h1></div>
-                <div class="row border-continentinfo">
-                <div class="northamerica-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Ceiba del mar. Mexico</p></div></div>
-                <div class="travellocationslist">
-                    <h3>Travel locations</h3>
-                    <ul>
-                    <li>Bahamas</li>
-                    <li>Canada</li>
-                    <li>Cuba</li>
-                    <li>Mexico</li>
-                    <li>USA</li>
-                    </ul>
+                <div>
+                    <h1>North America</h1>
                 </div>
+                <div class="row border-continentinfo">
+                    <!-- Image displaying Ceiba del mar. Mexico -->
+                    <div class="northamerica-backgroundimage backgroundimage-orientation">
+                        <div class="imagelocationinfo">
+                            <p class="imagetextposition">Ceiba del mar. Mexico</p>
+                        </div>
+                    </div>
+                    <div class="travellocationslist">
+                        <h3>Travel locations</h3>
+                        <ul>
+                            <li>Bahamas</li>
+                            <li>Canada</li>
+                            <li>Cuba</li>
+                            <li>Mexico</li>
+                            <li>USA</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <hr>
-           <section id="southamerica">
-               <div><h1>South America</h1></div>
+            <!-- list of countries searchable in South America -->
+            <section id="southamerica">
+                <div>
+                    <h1>South America</h1>
+                </div>
                 <div class="row border-continentinfo">
-               <div class="southamerica-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Rio de Janeiro. Brazil</p></div></div>
-                <div class="travellocationslist ">
-                    <h3>Travel locations</h3>
-                    <ul>
-                    <li>Argentina</li>
-                    <li>Brazil</li>
-                    <li>Chile</li>
-                    <li>Peru</li>
-                    <li>Uruguay</li>
-                    </ul>
+                    <!-- Image displaying Rio de Janeiro. Brazil -->
+                    <div class="southamerica-backgroundimage backgroundimage-orientation">
+                        <div class="imagelocationinfo">
+                            <p class="imagetextposition">Rio de Janeiro. Brazil</p>
+                        </div>
+                    </div>
+                    <div class="travellocationslist ">
+                        <h3>Travel locations</h3>
+                        <ul>
+                            <li>Argentina</li>
+                            <li>Brazil</li>
+                            <li>Chile</li>
+                            <li>Peru</li>
+                            <li>Uruguay</li>
+                        </ul>
+                    </div>
                 </div>
-               </div>
-               </section>
-               <hr>
-           <section id="africa">
-               <div><h1>Africa</h1></div>
-               <div class="row border-continentinfo">
-               <div class="africa-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Clifton, Cape town. South Africa</p></div></div>
-                <div class="travellocationslist ">
-                    <h3>Travel locations</h3>
-                    <ul>
-                    <li>Kenya</li>
-                    <li>Morocco</li>
-                    <li>South Africa</li>
-                    <li>Tunisa</li>
-                    <li>Zimbabwe</li>
-                    </ul>
-                    </div>
-               </div>
-               </section>
-               <hr>
-           <section id="australia/oceania">
-               <div><h1>Australia/Oceania</h1></div>
-               <div class="row border-continentinfo">
-               <div class="australia-backgroundimage backgroundimage-orientation"><div class="imagelocationinfo"><p class="imagetextposition">Sydney. Australia</p></div></div>
-                <div class="travellocationslist ">
-                    <h3>Travel locations</h3>
-                    <ul>
-                    <li>Australia</li>
-                    <li>Fiji</li>
-                    <li>Oceania</li>
-                    <li>Samoa</li>
-                    <li>Tonga</li>
-                    </ul>
+            </section>
+            <hr>
+            <!-- list of countries searchable in Africa -->
+            <section id="africa">
+                <div>
+                    <h1>Africa</h1>
                 </div>
-               </div>
-               </section>
-               <hr>
-               <!-- mail functionality using emailjs.com -->
-           <section id="contact" class="contact-section">
-             <div>
-               <h1>Contact</h1>
-             <p class="contact-description">
-               Fill out the form below to contact us. 
-             </p></div>
-          <div class="col-xs-12">
-			    <div class="form-group">
-	           <p class="lead">Personal Details:</p>
-                <form id="myform" onsubmit="return sendMail(this);" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="from_name" class="form-control" id="fullname" placeholder="Name" required/>
+                <div class="row border-continentinfo">
+                    <!-- Image displaying Clifton, Cape town. South Africa -->
+                    <div class="africa-backgroundimage backgroundimage-orientation">
+                        <div class="imagelocationinfo">
+                            <p class="imagetextposition">Clifton, Cape town. South Africa</p>
+                        </div>
                     </div>
-                    <div class="form-group">
-                <input type="email" name="from_email" class="form-control" id="emailaddress" placeholder="Email Address" required>
+                    <div class="travellocationslist ">
+                        <h3>Travel locations</h3>
+                        <ul>
+                            <li>Kenya</li>
+                            <li>Morocco</li>
+                            <li>South Africa</li>
+                            <li>Tunisa</li>
+                            <li>Zimbabwe</li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                <textarea name="project_request" class="form-control" id="Textarea" rows="5" placeholder="Comments"></textarea>
+                </div>
+            </section>
+            <hr>
+            <!-- list of countries searchable in Australia/Oceania -->
+            <section id="australia/oceania">
+                <div>
+                    <h1>Australia/Oceania</h1>
+                </div>
+                <div class="row border-continentinfo">
+                    <!-- Image displaying Sydney. Australia -->
+                    <div class="australia-backgroundimage backgroundimage-orientation">
+                        <div class="imagelocationinfo">
+                            <p class="imagetextposition">Sydney. Australia</p>
+                        </div>
                     </div>
-                <button type="submit" class="btn btn-success center-block btn-lg" value="Go to index.html">Submit</button>
-                </form>
-            </div>
-          </div>
-         </section>
-        <footer class="footer">
-            
-    </footer>
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
-        <script src="/assets/js/maps.js"></script>
-        <script src="/assets/js/sendemails.js"></script>
-        <script src="/assets/js/search.js"></script>
-        <script src="/assets/js/scroll-navbar.js"></script>
+                    <div class="travellocationslist ">
+                        <h3>Travel locations</h3>
+                        <ul>
+                            <li>Australia</li>
+                            <li>Fiji</li>
+                            <li>Oceania</li>
+                            <li>Samoa</li>
+                            <li>Tonga</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <!-- mail functionality using emailjs.com -->
+            <section id="contact" class="contact-section">
+                <div>
+                    <h1>Contact</h1>
+                    <p class="contact-description">
+                        Fill out the form below to contact us.
+                    </p>
+                </div>
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <p class="lead">Personal Details:</p>
+                        <form id="myform" onsubmit="return sendMail(this);" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="from_name" class="form-control" id="fullname" placeholder="Name" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="from_email" class="form-control" id="emailaddress" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="project_request" class="form-control" id="Textarea" rows="5" placeholder="Comments"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success center-block btn-lg" value="Go to index.html">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJCf8L3K1iCXMT-kw8mpPMnRpBWs1AW24&libraries=places&callback=initMap" async defer></script>
+            <script src="/assets/js/maps.js"></script>
+            <script src="/assets/js/sendemails.js"></script>
+            <script src="/assets/js/search.js"></script>
+        </div>
     </div>
-  </div>
 </body>
+
 </html>

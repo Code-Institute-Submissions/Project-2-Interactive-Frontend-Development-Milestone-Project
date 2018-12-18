@@ -4,7 +4,7 @@
       var countryRestrict = {'country': 'uk'};
       var MARKER_PATH = 'http://maps.google.com/mapfiles/kml/paddle/';
       var hostnameRegexp = new RegExp('^https?://.+?/');
-      var rankby
+      
       var countries = {
         'ar': {
           center: {lat: -35.3, lng: -64.9},
@@ -125,7 +125,8 @@
           mapTypeControl: false,
           panControl: false,
           zoomControl: false,
-          streetViewControl: false
+          streetViewControl: true,
+          fullscreenControl: false
         });
 
         infoWindow = new google.maps.InfoWindow({
@@ -190,24 +191,20 @@
           if (document.getElementById("cafe").checked) poi = 'cafe';
           clearMarkers();
           markers = []; 
-          
-    
-         
+
+
   
           var search = {
             
             bounds: map.getBounds(),
-            types: [poi]
+            types: [poi],
+            
           };
           
-           
-          function myFunction() {
-            place.rating.sort();
-            document.getElementById("results").innerHTML = place.rating;
-          }
+          
+                    
 
-    
-    
+
           places.nearbySearch(search, function(results, status) {
            if (status === google.maps.places.PlacesServiceStatus.OK) {
             clearResults();
@@ -380,7 +377,19 @@
   }
  }
  
-      
-function showSpan() {
-   document.getElementById('welcomeSpan').style.display = "block";
+
+
+
+
+document.getElementById("autocomplete").addEventListener("search", myFunction);
+function myFunction() {
+     document.getElementById("autocomplete");
+    document.getElementById("listexpand").innerHTML ="Results List ▼";
 }
+
+
+
+
+
+
+

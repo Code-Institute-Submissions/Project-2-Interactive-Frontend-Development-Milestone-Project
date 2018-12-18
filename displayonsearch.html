@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+     <input type="search" id="myInput">
+
+     <p><strong>Note:</strong> The search event is not supported in Internet Explorer, Firefox or Opera 12 and earlier versions.</p>
+
+     <div id="welcomespan2"></div>
+
+     <script>
+          document.getElementById("myInput").addEventListener("search", myFunction);
+
+          function myFunction() {
+               document.getElementById("myInput");
+               document.getElementById("welcomespan2").innerHTML = "<button>hey</button> ";
+          }
+     </script>
+
+</body>
+
+</html>

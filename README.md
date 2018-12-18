@@ -1,6 +1,6 @@
 Project 2 interactive-frontend-dev-project
 
-The project was to design a interactive frontend only website. The website is designed for people planning a holiday to allow them to search for various places increasing hotels,art galleries museums bars restaurants and cafes. The website allows to to search for a city, town , postcode etc, the website can when display onw of the place options within the boundaries of the display, they are listed from alphabetic letters, clicking on each marker provides for information about each location including the address, Telephone number, aggurate review and website of the location.  The navbar contents links within the page for each continent to allw you to see the avaliable travel locations. 
+The goal of the project was to design a interactive frontend only website. The website is designed for people planning a holiday to allow them to search for different activities they can partake in while on holiday.  
 
 *-UX-*
 
@@ -26,9 +26,9 @@ https://www.cssscript.com/radio-input-based-star-rating-control-pure-css/
 
 *-page by page walkthrough of website features-*
 This project consists of one webpage.
-The page consists of a navbar with internal links to different parts of the webpage within only the travel locations for each continent and the contact form.
-The map part of the page allowing the user to search difference cities, towns and postcodes within various countries to obtains infomation on various places including hotels,art galleries museums bars restaurants and cafes to the right of the map is a list of the various places listed alphabetically.
-Below that in the travel locations within each continent and the contact form.
+The page consists of a navbar with internal links for each continent and the contact form.
+The map part of the page allowing the user to search difference cities, towns and postcodes within various countries to obtains infomation on various places including hotels,art galleries museums bars restaurants and cafes. Clicking on each marker provides information about each location including the address, Telephone number, aggregate review and website of the location.   Below the map is the list of the various places listed on the map corrisponding alphabetically to the markers on the map.
+Below that are the travel locations that are searchable within each continent and the contact form below that.
 
 Potential future features.
 1. A website forum allowing people to discuss there holiday experieces with other customers.
@@ -40,7 +40,7 @@ Potential future features.
 *-Technologies used-*
 
 •	Bootstrap ( https://getbootstrap.com/ )
-o	Bootstrap was used to mobile-first design of the website.
+o	Bootstrap was used for the mobile-first design of the website.
 
 •	Cdnjs ( https://cdnjs.com/libraries )
 o	Cdnjs add the font awesome library for fonts and CSS framework.
@@ -71,7 +71,7 @@ APIs being used
 1. Places API
 2. Maps Javascript API
 
-The longitude and latitude coordinates beinf used for the map were obtained from google maps.
+The longitude and latitude coordinates being used for the locations on the map were obtained from google maps.
 
 
 *-Media-*
