@@ -21,37 +21,38 @@
     </script>
     <title class="title">SimpleTravel</title>
 </head>
+
 <body class="body">
-                <header class="header">
-                <!-- Navbar -->
-            </header>
-                            <nav id="navbar-sticky" class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <header class="header">
+        <!-- Navbar -->
+    </header>
+    <nav id="navbar-sticky" class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                               <span class="sr-only">Toggle navigation</span>
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                               <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-title" href="index.html"><img  src="/assets/images/Airplane.svg.png" alt="plane" height="30" width="30" style="margin-top:-8px;margin-right:5px;"/>SimpleTravel</a>
-                        </div>
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a href="#europe">Europe <span class="sr-only">(current)</span></a></li>
-                                <li><a href="#northamerica">North America</a></li>
-                                <li><a href="#southamerica">South America</a></li>
-                                <li><a href="#africa">Africa</a></li>
-                                <li><a href="#australia/oceania">Australia/Oceania</a></li>
-                            </ul>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#contact">Contact</a></li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
+                <a class="navbar-title" href="index.html"><img  src="/assets/images/Airplane.svg.png" alt="plane" height="30" width="30" style="margin-top:-8px;margin-right:5px;"/>SimpleTravel</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#europe">Europe <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#northamerica">North America</a></li>
+                    <li><a href="#southamerica">South America</a></li>
+                    <li><a href="#africa">Africa</a></li>
+                    <li><a href="#australia/oceania">Australia/Oceania</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
     <div class="row">
         <div class="col-xs col-sm col-md col-lg">
             <section class="beachholiday-backgroundimage">
@@ -63,7 +64,7 @@
                                 <div id="searchresults">
                                     Search for a place (example city, town or postcode )
                                 </div>
-                                <input id="autocomplete" type="search" placeholder="Start typing here" name="answer" onclick="myFunction()" />
+                                <input id="autocomplete" type="search" placeholder="Start typing here" name="answer" onsearch="myFunction()" />
                                 <!-- List of selectable countries -->
                                 <div id="controls">
                                     <select id="country">
