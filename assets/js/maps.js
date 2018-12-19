@@ -382,9 +382,9 @@
 
 
 
-      document.getElementById("autocomplete").addEventListener("search", myFunction);
+      document.getElementById("autocomplete").addEventListener("text", resultsList);
 
-      function myFunction() {
+      function resultsList() {
         document.getElementById("autocomplete");
         document.getElementById("listexpand").innerHTML = "Results List ▼";
       }

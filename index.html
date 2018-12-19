@@ -27,7 +27,7 @@
         <!-- Navbar -->
     </header>
     <nav id="navbar-sticky" class="navbar navbar-default">
-        <div class="container-fluid">
+        <div class="container-fluid navbar-background-color">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                               <span class="sr-only">Toggle navigation</span>
@@ -64,7 +64,7 @@
                                 <div id="searchresults">
                                     Search for a place (example city, town or postcode )
                                 </div>
-                                <input id="autocomplete" type="search" placeholder="Start typing here" name="answer" onclick="myFunction()" />
+                                <input id="autocomplete" type="text" placeholder="Start typing here" name="answer" onclick="resultsList()" />
                                 <!-- List of selectable countries -->
                                 <div id="controls">
                                     <select id="country">
@@ -148,13 +148,16 @@
                             <input onchange="search()" type="radio" id="cafe" name="option" disabled />
                             <label for="cafe">Cafes</label>
                         </div>
+                        <div>
+                            
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xs col-sm col-md col-lg" style="width: 100%;">
                             <!-- Map -->
                             <div id="map" class="mapscontainer mapwidth"></div>
                             <!-- list of search results -->
-                            <div type="button" id="listexpand" class="listspan resultslist" data-toggle="collapse" data-target="#listing" style="width:100%;"></div>
+                            <div type="button" class="listspan resultslist" data-toggle="collapse" data-target="#listing" style="width:100%;"></div>
                             <a href="#searchresults" class="searchresults">
                                 <div class="collapse navbar-collapse-custom listing col-sm-percent myBox" id="listing">
                                     <table class="resultsTable">
@@ -324,7 +327,6 @@
             <script src="/assets/js/maps.js"></script>
             <script src="/assets/js/sendemails.js"></script>
             <script src="/assets/js/search.js"></script>
-            <script src="/assets/js/nav.js"></script>
             
         </div>
     </div>
