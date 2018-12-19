@@ -167,9 +167,6 @@
       }
 
 
-
-
-
       // Search for accomodation, art galleries, Museums, Bars and Restaurants  
       //  Google maps only allows you to search for one plaace type at a time
 
@@ -193,8 +190,9 @@
         if (document.getElementById("cafe").checked) poi = 'cafe';
         clearMarkers();
         markers = [];
-
-
+        if (document.getElementById("movie_theater").checked) poi = 'movie_theater';
+        clearMarkers();
+        markers = [];
 
         var search = {
 
@@ -286,15 +284,19 @@
 
         var iconTd = document.createElement('td');
         var nameTd = document.createElement('td');
+        var addressTd = document.createElement('td');
         var icon = document.createElement('img');
         icon.src = markerIcon;
         icon.setAttribute('class', 'placeIcon');
         icon.setAttribute('className', 'placeIcon');
         var name = document.createTextNode(result.name);
+        var address = document.createTextNode(result.vicinity);
         iconTd.appendChild(icon);
         nameTd.appendChild(name);
+        addressTd.appendChild(address);
         tr.appendChild(iconTd);
         tr.appendChild(nameTd);
+        tr.appendChild(addressTd);
         results.appendChild(tr);
       }
 
