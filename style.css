@@ -415,19 +415,9 @@
 
      /*---mapwidth---*/
 
-     @media (min-width: 991px) {
          .mapwidth {
              width: 100%;
          }
-     }
-
-     @media (max-width: 992px) {
-         .mapwidth {
-             width: 100%;
-         }
-     }
-
-
 
 
      /*---google maps background images---*/
