@@ -25,7 +25,6 @@
 <body class="body">
     <header class="header">
         <!-- Navbar -->
-    </header>
     <nav id="navbar-sticky" class="navbar navbar-default">
         <div class="container-fluid navbar-background-color">
             <div class="navbar-header">
@@ -53,6 +52,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    </header>
     <div class="row">
         <div class="col-xs col-sm col-md col-lg">
             <section class="beachholiday-backgroundimage">
@@ -61,7 +61,7 @@
                         <div class="container-search">
                             <div>
                                 <h1>Travel search</h1>
-                                <div id="searchresults">
+                                <div>
                                     Search for a place (example city, town or postcode )
                                 </div>
                                 <input id="autocomplete" type="text" placeholder="Start typing here" name="answer" onclick="resultsList()" />
@@ -147,15 +147,13 @@
 
                             <input onchange="search()" type="radio" id="cafe" name="option" disabled />
                             <label for="cafe">Cafes</label>
-                        </div>
-                        <div  >
-                             <div id="places"></div>                         
+                        
                             <input onchange="search()" type="radio" id="movie_theater" name="option" disabled />
-                            <label for="movie_theater">movie_theater</label>
+                            <label for="movie_theater">Movie Theater</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xs col-sm col-md col-lg" style="width: 100%;">
+                        <div class="col-xs col-sm col-md col-lg" style="width: 100%;"  id="searchresults">
                             <!-- Map -->
                             <div id="map" class="mapscontainer mapwidth"></div>
                             <!-- list of search results -->
@@ -164,8 +162,11 @@
                             </div>
                             <a href="#searchresults" class="searchresults">
                                 <div class="collapse navbar-collapse-custom listing col-sm-percent myBox" id="listing">
+                                    <div class="listName" >Name</div>
+                                    <div class="listAddress">Address</div>
                                     <table class="resultsTable">
-                                        <tbody id="results"></tbody>
+                                        <tbody id="results">
+                                        </tbody>
                                     </table>
                                 </div>
                             </a>

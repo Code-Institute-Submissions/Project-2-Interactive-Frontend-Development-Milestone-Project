@@ -1,8 +1,8 @@
                     
                     
           function fivestar(place){
-           if (place.rating < 3){
-                       clearResults();
+           if (results.rating < 3){
+            clearResults();
             clearMarkers();
             }}
            

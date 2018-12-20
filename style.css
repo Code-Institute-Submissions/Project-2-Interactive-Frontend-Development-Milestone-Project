@@ -28,6 +28,15 @@
      h3 {
          font-size: 24px;
      }
+     
+     a {
+    color: black;
+    text-decoration: none;
+    }
+    
+    tr{
+        
+    }
 
      @media screen and (min-width: 768px) and (max-width: 992px) {
          h3 {
@@ -144,8 +153,21 @@
              margin-right: 10px
          }
      }
+     
+    .placeiconwidth{
+         width: 42px
+     }
 
-     .hotelIcon {
+    .nameiconwidth{
+        width: 45%;
+        padding-right: 5%;
+    }
+    .addressiconwidth{
+        width: 45%;
+        padding-left: 5%;
+    }
+    
+     .imageicon {
          width: 24px;
          height: 24px;
      }
@@ -326,15 +348,9 @@
      }
 
 
-     @media (min-width: 768px) {
-         .navbar-collapse-custom {
-             display: block!important;
-             height: auto!important;
-             padding-bottom: 0;
-         }
-     }
 
-     @media (min-width: 768px) {
+
+     @media (min-width: 992px) {
          .resultslist {
              position: relative;
              padding-right: 10px;
@@ -345,9 +361,27 @@
              border-radius: 4px;
              text-align: center;
              width: 100%;
+             font-size: 24px;
 
          }
      }
+     
+          @media (min-width: 768px) and (max-width: 992px) {
+         .resultslist {
+             position: relative;
+             padding-right: 10px;
+             padding-left: 10px;
+             margin-right: 15px;
+             background-color: transparent;
+             border: 1px solid transparent;
+             border-radius: 4px;
+             text-align: center;
+             width: 100%;
+            font-size: 24px;
+         }
+     }
+     
+     
 
      @media (max-width: 768px) {
          .resultslist {
@@ -355,19 +389,7 @@
              width: 100%;
              border-radius: 0px;
              margin-bottom: 10px;
-         }
-     }
-
-     @media (min-width: 768px) {
-         .listspan {
-             display: none;
-         }
-     }
-
-
-     @media (max-width: 768px) {
-         .listspan {
-             font-size: 20px;
+             font-size: 24px;
          }
      }
 
@@ -739,6 +761,7 @@
              overflow-x: hidden;
              margin-bottom: 50px;
              margin-right: 10%;
+             font-size: 24px;
          }
      }
 
@@ -749,7 +772,7 @@
              cursor: pointer;
              overflow-x: hidden;
              margin-bottom: 50px;
-
+            font-size: 20px;
          }
      }
 
@@ -763,6 +786,7 @@
              overflow-x: hidden;
              margin-bottom: 50px;
              padding: 0px;
+             font-size: 16px;
          }
      }
 
@@ -773,7 +797,23 @@
          text-decoration: none;
      }
 
+    .listName{
+        float:left;
+        width:47%;
+        text-align:left;
+        margin-left:10%;
+    }
+
+    .listAddress{
+        float:left;
+        text-align:left;
+        margin-left:3%;
+    }
+
+
      /* Results table */
+     
+     
 
      @media screen and (min-width: 992px) {
          .resultsTable {

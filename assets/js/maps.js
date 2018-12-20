@@ -194,6 +194,9 @@
         clearMarkers();
         markers = [];
 
+
+
+
         var search = {
 
           bounds: map.getBounds(),
@@ -281,14 +284,19 @@
         tr.onclick = function() {
           google.maps.event.trigger(markers[i], 'click');
         };
-
+        
+       
         var iconTd = document.createElement('td');
         var nameTd = document.createElement('td');
         var addressTd = document.createElement('td');
+        
         var icon = document.createElement('img');
         icon.src = markerIcon;
         icon.setAttribute('class', 'placeIcon');
         icon.setAttribute('className', 'placeIcon');
+        iconTd.setAttribute('class', 'placeiconwidth');
+        nameTd.setAttribute('class', 'nameiconwidth');
+        addressTd.setAttribute('class', 'addressiconwidth');
         var name = document.createTextNode(result.name);
         var address = document.createTextNode(result.vicinity);
         iconTd.appendChild(icon);
@@ -328,7 +336,7 @@
       // Load the place information into the HTML elements used by the info window.
 
       function buildIWContent(place) {
-        document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
+        document.getElementById('iw-icon').innerHTML = '<img class="imageicon" ' +
           'src="' + place.icon + '"/>';
         document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
           '">' + place.name + '</a></b>';
@@ -350,11 +358,11 @@
         if (place.rating) {
           var ratingHtml = '';
           for (var i = 0; i < 5; i++) {
-            if (place.rating < (i + 0.5)) {
-              ratingHtml += '&#10025;';
+            if (place.rating > (i + 0.5)) {
+              ratingHtml += '&#10029;';
             }
             else {
-              ratingHtml += '&#10029;';
+              ratingHtml += '&#10025;';
             }
             document.getElementById('iw-rating-row').style.display = '';
             document.getElementById('iw-rating').innerHTML = ratingHtml;
@@ -391,4 +399,8 @@
         document.getElementById("listexpand").innerHTML = "Results List ▼";
       }
 
+      
+      
+      
+      
       
