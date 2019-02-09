@@ -396,11 +396,11 @@
 
       function resultsList() {
         document.getElementById("autocomplete");
-        document.getElementById("listexpand").innerHTML = "Results List ▼";
+        document.getElementById("listexpand").style.display = "block";
+        
       }
 
       
-      
-      
+
       
       

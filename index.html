@@ -64,7 +64,7 @@
                                 <div>
                                     Search for a place (example city, town or postcode )
                                 </div>
-                                <input id="autocomplete" type="text" placeholder="Start typing here" name="answer" onclick="resultsList()" />
+                                <input id="autocomplete" type="text" placeholder="Start typing here" name="answer" onchange="resultsList()" />
                                 <!-- List of selectable countries -->
                                 <div id="controls">
                                     <select id="country">
@@ -158,12 +158,18 @@
                             <div id="map" class="mapscontainer mapwidth"></div>
                             <!-- list of search results -->
                             <div class="listspan resultslist" data-toggle="collapse" data-target="#listing" style="width:100%;min-height:0px;">
-                                <button id="listexpand" style="background-color:antiquewhite;border:none;"></button>
+                                <details>
+                                <summary id="listexpand" style="background-color:antiquewhite;border:none;display:none">Results List</summary>
+                                    <h2 class="listIcon" >Icon</h2>
+                                    <h2 class="listName" >Name</h2>
+                                    <h2 class="listAddress">Address</h2>
+                                </details>
                             </div>
+                                <div id="hidden_div" style="">
+                                 
+                                </div>
                             <a href="#searchresults" class="searchresults">
                                 <div class="collapse navbar-collapse-custom listing col-sm-percent myBox" id="listing">
-                                    <div class="listName" >Name</div>
-                                    <div class="listAddress">Address</div>
                                     <table class="resultsTable">
                                         <tbody id="results">
                                         </tbody>
@@ -182,7 +188,7 @@
                 </div>
                 <div class="row border-continentinfo">
                     <!-- Image displaying Old Town square in prague. Czech Republic -->
-                    <div class="europe-backgroundimage backgroundimage-orientation">
+                    <div class="europe-backgroundimage backgroundimage-orientation backgroundimage-positionleft">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Old Town square in prague. Czech Republic</p>
                         </div>
@@ -208,7 +214,7 @@
                 </div>
                 <div class="row border-continentinfo">
                     <!-- Image displaying Ceiba del mar. Mexico -->
-                    <div class="northamerica-backgroundimage backgroundimage-orientation">
+                    <div class="northamerica-backgroundimage backgroundimage-orientation backgroundimage-positionright">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Ceiba del mar. Mexico</p>
                         </div>
@@ -233,7 +239,7 @@
                 </div>
                 <div class="row border-continentinfo">
                     <!-- Image displaying Rio de Janeiro. Brazil -->
-                    <div class="southamerica-backgroundimage backgroundimage-orientation">
+                    <div class="southamerica-backgroundimage backgroundimage-orientation backgroundimage-positionleft">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Rio de Janeiro. Brazil</p>
                         </div>
@@ -258,7 +264,7 @@
                 </div>
                 <div class="row border-continentinfo">
                     <!-- Image displaying Clifton, Cape town. South Africa -->
-                    <div class="africa-backgroundimage backgroundimage-orientation">
+                    <div class="africa-backgroundimage backgroundimage-orientation backgroundimage-positionright">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Clifton, Cape town. South Africa</p>
                         </div>
@@ -283,7 +289,7 @@
                 </div>
                 <div class="row border-continentinfo">
                     <!-- Image displaying Sydney. Australia -->
-                    <div class="australia-backgroundimage backgroundimage-orientation">
+                    <div class="australia-backgroundimage backgroundimage-orientation backgroundimage-positionleft">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Sydney. Australia</p>
                         </div>
