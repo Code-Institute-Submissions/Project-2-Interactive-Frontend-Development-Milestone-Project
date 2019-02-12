@@ -260,44 +260,44 @@
 
      @media screen and (max-width: 768px) {
          .navbar {
-             background-color: blue;
+             background-color: dodgerblue;
              color: white;
              margin: 0px;
              margin-bottom: -20px;
-             border-color: blue;
+             border-color: dodgerblue;
              font-size: 13px;
          }
      }
 
      @media screen and (min-device-width: 768px) and (max-device-width: 992px) {
          .navbar {
-             background-color: blue;
+             background-color: dodgerblue;
              color: white;
              margin: 0px;
              margin-bottom: -20px;
-             border-color: blue;
+             border-color: dodgerblue;
              font-size: 13px;
          }
      }
 
      @media screen and (min-width: 992px) {
          .navbar {
-             background-color: blue;
+             background-color: dodgerblue;
              color: white;
              margin: 0px;
              margin-bottom: -10px;
-             border-color: blue;
+             border-color: dodgerblue;
              font-size: 18px;
          }
      }
 
      @media screen and (min-width: 1200px) {
          .navbar {
-            background-color: blue;
+            background-color: dodgerblue;
             color: white;
             margin: 0px;
             margin-bottom: -10px;
-            border-color: blue;
+            border-color: dodgerblue;
             font-size: 23px;
          }
      }
@@ -305,7 +305,7 @@
 
      @media screen and (max-width: 992px) {
          .navbar-title {
-            background-color: blue;
+            background-color: dodgerblue;
             float: left;
             height: 50px;
             padding: 15px 15px;
@@ -319,7 +319,7 @@
 
      @media screen and (min-width: 992px) {
          .navbar-title {
-            background-color: blue;
+            background-color: dodgerblue;
             float: left;
             height: 50px;
             padding: 15px 15px;
@@ -341,7 +341,7 @@
      }
 
      .navbar-nav {
-         background-color: blue;
+         background-color: dodgerblue;
      }
 
      .navbar-default .navbar-brand {
@@ -365,7 +365,7 @@
 
      .navbar-default .navbar-toggle:focus,
      .navbar-default .navbar-toggle:hover {
-         background-color: blue;
+         background-color: dodgerblue;
      }
 
 
@@ -415,7 +415,7 @@
      }
 
     .navbar-background-color{
-        background-color: blue;
+        background-color: dodgerblue;
     }
 
      /*------ Image ------*/
