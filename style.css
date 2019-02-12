@@ -446,7 +446,7 @@
 
      @media screen and (min-width: 768px) {
          .beachholiday-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/beachholiday.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/beachholiday.jpg") no-repeat center top;
              min-height: 750px;
              background-size: cover;
              padding-top: 8%;
@@ -584,7 +584,7 @@
 
      @media screen and (min-width: 768px) {
          .europe-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/europe-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/europe-backgroundimage.jpg") no-repeat center top;
              background-position-y: bottom;
              background-size: cover;
          }
@@ -592,7 +592,7 @@
 
      @media screen and (max-width: 768px) {
          .europe-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/europe-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/europe-backgroundimage.jpg") no-repeat center top;
              background-position-y: bottom;
              background-size: cover;
 
@@ -604,7 +604,7 @@
 
      @media screen and (min-width: 768px) {
          .northamerica-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
              background-position-y: center;
              background-size: cover;
          }
@@ -612,7 +612,7 @@
 
      @media screen and (max-width: 768px) {
          .northamerica-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/northamerica-backgroundimage.jpg") no-repeat center top;
              background-position-y: center;
              background-size: cover;
          }
@@ -622,7 +622,7 @@
 
      @media screen and (min-width: 768px) {
          .southamerica-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
              background-position-y: bottom;
              background-size: cover;
          }
@@ -630,7 +630,7 @@
 
      @media screen and (max-width: 768px) {
          .southamerica-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/southamerica-backgroundimage.jpg") no-repeat center top;
              background-position-y: bottom;
              background-size: cover;
          }
@@ -640,14 +640,14 @@
 
      @media screen and (min-width: 768px) {
          .africa-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/africa-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/africa-backgroundimage.jpg") no-repeat center top;
              background-size: cover;
          }
      }
 
      @media screen and (max-width: 768px) {
          .africa-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/africa-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/africa-backgroundimage.jpg") no-repeat center top;
              background-size: cover;
 
          }
@@ -657,7 +657,7 @@
 
      @media screen and (min-width: 768px) {
          .australia-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/australia-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/australia-backgroundimage.jpg") no-repeat center top;
              background-position-y: 70%;
              background-size: cover;
          }
@@ -665,7 +665,7 @@
 
      @media screen and (max-width: 768px) {
          .australia-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/australia-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/australia-backgroundimage.jpg") no-repeat center top;
              background-position-y: 70%;
              background-size: cover;
          }
@@ -675,7 +675,7 @@
 
      @media screen and (min-width: 768px) {
          .oceania-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
              background-position-y: center;
              background-size: cover;
          }
@@ -683,7 +683,7 @@
 
      @media screen and (max-width: 768px) {
          .oceania-mobile-backgroundimage {
-             background: url("/interactive-frontend-dev-project/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
+             background: url("/Project-2-Interactive-Frontend-Development-Milestone-Project/assets/images/oceania-backgroundimage.jpg") no-repeat center top;
              background-position-y: center;
              background-size: cover;
          }
