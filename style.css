@@ -19,6 +19,7 @@
 
      h1 {
          text-align: center;
+         font-size: 50px;
      }
 
      h2 {
@@ -172,11 +173,23 @@
          height: 24px;
      }
 
-     .imagelocationinfo {
-         text-align: right;
-         margin-right: 10px;
-         color: white;
-     }
+    @media screen and (max-width: 768px) {
+    .imagelocationinfo {
+        text-align: right;
+        margin-right: 10px;
+        color: white;
+        font-size: 16px;
+            }
+    }
+
+    @media screen and (min-width: 768px) {
+    .imagelocationinfo {
+        text-align: right;
+        margin-right: 10px;
+        color: white;
+        font-size: 32px;
+            }
+    }
 
      .imagetextposition {
          bottom: -95%;
