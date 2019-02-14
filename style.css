@@ -439,14 +439,14 @@
          }
      }
 
-     @media screen and (max-device-width: 991px) {
+     @media screen and (max-device-width: 992px) {
          .mapscontainer {
              border: solid;
              min-height: 300px;
          }
      }
 
-     @media screen and (min-width: 991px) {
+     @media screen and (min-width: 992px) {
          .mapscontainer {
              border: solid;
              min-height: 440px;
