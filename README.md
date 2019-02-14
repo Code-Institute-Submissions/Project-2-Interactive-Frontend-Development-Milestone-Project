@@ -7,7 +7,7 @@ The goal of the project was to design a interactive frontend only website. The w
 The process for designing this website began my searching [1] and [2] for design ideas along with travel websites. The websites used for design ideas included [3] and [4]. The basic design for the navbar was taken from [5]. The google maps platform has various guides and support [6] thats useful when designing map functionality.
 1.	https://www.awwwards.com/
 2.	https://tympanus.net/codrops/
-3.  http://psd.la/startravel/# Project-2-Interactive-Frontend-Development-Milestone-Project
+3.  http://psd.la/startravel/# 
 4.	https://www.tui.co.uk/
 5.  https://getbootstrap.com/docs/3.3/components/#navbar
 6.  https://developers.google.com/places/web-service/intro
