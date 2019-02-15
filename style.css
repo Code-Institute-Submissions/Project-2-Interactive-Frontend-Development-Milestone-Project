@@ -14,19 +14,19 @@
          color: white;
      }
 
-     @media screen and (max-width: 768px){
-     h1 {
-         text-align: center;
-         font-size: 36px;
+     @media screen and (max-width: 768px) {
+         h1 {
+             text-align: center;
+             font-size: 36px;
          }
      }
-     
-    @media screen and (min-width: 768px){
-     h1 {
-         text-align: center;
-         font-size: 50px;
+
+     @media screen and (min-width: 768px) {
+         h1 {
+             text-align: center;
+             font-size: 50px;
          }
-    }
+     }
 
      h2 {
          font-size: 20px;
@@ -35,12 +35,12 @@
      h3 {
          font-size: 24px;
      }
-     
+
      a {
-    color: black;
-    text-decoration: none;
-    }
-    
+         color: black;
+         text-decoration: none;
+     }
+
 
      @media screen and (min-width: 768px) and (max-width: 992px) {
          h3 {
@@ -75,9 +75,21 @@
          margin-left: 0px;
          margin-bottom: 10px;
      }
-     
-     .padding0px{
+
+     .padding0px {
          padding: 0px;
+     }
+
+     @media (min-width: 576px) {
+         .col-sm-8 {
+             width: 66.66666667%;
+         }
+     }
+
+     @media (min-width: 576px) {
+         .col-sm-8 {
+             width: 66.66666667%;
+         }
      }
 
      .border-continentinfo {
@@ -161,42 +173,43 @@
              margin-right: 10px
          }
      }
-     
-    .placeiconwidth{
+
+     .placeiconwidth {
          width: 42px
      }
 
-    .nameiconwidth{
-        width: 45%;
-        padding-right: 5%;
-    }
-    .addressiconwidth{
-        width: 45%;
-        padding-left: 5%;
-    }
-    
+     .nameiconwidth {
+         width: 45%;
+         padding-right: 5%;
+     }
+
+     .addressiconwidth {
+         width: 45%;
+         padding-left: 5%;
+     }
+
      .imageicon {
          width: 24px;
          height: 24px;
      }
 
-    @media screen and (max-width: 768px) {
-    .imagelocationinfo {
-        text-align: right;
-        margin-right: 10px;
-        color: white;
-        font-size: 16px;
-            }
-    }
+     @media screen and (max-width: 768px) {
+         .imagelocationinfo {
+             text-align: right;
+             margin-right: 10px;
+             color: white;
+             font-size: 16px;
+         }
+     }
 
-    @media screen and (min-width: 768px) {
-    .imagelocationinfo {
-        text-align: right;
-        margin-right: 10px;
-        color: white;
-        font-size: 32px;
-            }
-    }
+     @media screen and (min-width: 768px) {
+         .imagelocationinfo {
+             text-align: right;
+             margin-right: 10px;
+             color: white;
+             font-size: 32px;
+         }
+     }
 
      .imagetextposition {
          bottom: -95%;
@@ -292,39 +305,39 @@
 
      @media screen and (min-width: 1200px) {
          .navbar {
-            background-color: dodgerblue;
-            color: white;
-            margin: 0px;
-            margin-bottom: -10px;
-            border-color: dodgerblue;
-            font-size: 23px;
+             background-color: dodgerblue;
+             color: white;
+             margin: 0px;
+             margin-bottom: -10px;
+             border-color: dodgerblue;
+             font-size: 23px;
          }
      }
 
 
      @media screen and (max-width: 992px) {
          .navbar-title {
-            background-color: dodgerblue;
-            float: left;
-            height: 50px;
-            padding: 15px 15px;
-            font-size: 17px;
-            line-height: 20px;
-            color: white;
-             
+             background-color: dodgerblue;
+             float: left;
+             height: 50px;
+             padding: 15px 15px;
+             font-size: 17px;
+             line-height: 20px;
+             color: white;
+
          }
      }
 
 
      @media screen and (min-width: 992px) {
          .navbar-title {
-            background-color: dodgerblue;
-            float: left;
-            height: 50px;
-            padding: 15px 15px;
-            font-size: 22px;
-            line-height: 20px;
-            color: white;
+             background-color: dodgerblue;
+             float: left;
+             height: 50px;
+             padding: 15px 15px;
+             font-size: 22px;
+             line-height: 20px;
+             color: white;
          }
      }
 
@@ -385,8 +398,8 @@
 
          }
      }
-     
-          @media (min-width: 768px) and (max-width: 992px) {
+
+     @media (min-width: 768px) and (max-width: 992px) {
          .resultslist {
              position: relative;
              padding-right: 10px;
@@ -397,11 +410,11 @@
              border-radius: 4px;
              text-align: center;
              width: 100%;
-            font-size: 24px;
+             font-size: 24px;
          }
      }
-     
-     
+
+
 
      @media (max-width: 768px) {
          .resultslist {
@@ -413,9 +426,9 @@
          }
      }
 
-    .navbar-background-color{
-        background-color: dodgerblue;
-    }
+     .navbar-background-color {
+         background-color: dodgerblue;
+     }
 
      /*------ Image ------*/
 
@@ -457,9 +470,9 @@
 
      /*---mapwidth---*/
 
-         .mapwidth {
-             width: 100%;
-         }
+     .mapwidth {
+         width: 100%;
+     }
 
 
      /*---google maps background images---*/
@@ -475,18 +488,18 @@
              padding-bottom: 8%;
          }
      }
-    
-    @media screen and (min-width:768px){
-    .imagepositionright{
-        float: right;
-        }
-    }
+
+     @media screen and (min-width:768px) {
+         .imagepositionright {
+             float: right;
+         }
+     }
 
      @media screen and (max-width: 280px) {
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 150px;
-             
+
              margin: 10px;
          }
      }
@@ -496,7 +509,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 170px;
-             
+
              margin: 10px;
          }
      }
@@ -505,7 +518,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 180px;
-             
+
              margin: 10px;
          }
      }
@@ -514,7 +527,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 200px;
-             
+
              margin: 10px;
          }
      }
@@ -523,7 +536,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 220px;
-             
+
              margin: 10px;
          }
      }
@@ -532,7 +545,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 230px;
-             
+
              margin: 10px;
          }
      }
@@ -543,7 +556,7 @@
              min-height: 200px;
              background-size: cover;
              margin: 5%;
-             
+
          }
      }
 
@@ -553,7 +566,7 @@
              min-height: 250px;
              background-size: cover;
              margin: 5%;
-             
+
          }
      }
 
@@ -562,7 +575,7 @@
              min-height: 300px;
              background-size: cover;
              margin: 5%;
-             
+
          }
      }
 
@@ -571,7 +584,7 @@
              min-height: 330px;
              background-size: cover;
              margin: 5%;
-             
+
          }
      }
 
@@ -580,26 +593,27 @@
              min-height: 350px;
              background-size: cover;
              margin: 5%;
-             
+
          }
      }
 
-    
-    @media screen and (min-width: 450px) {
-    .backgroundimage-positionleft{
-        float: left;
-    
-        }
-    }
-        @media screen and (min-width: 450px) {
-    .backgroundimage-positionright{
-        float: right;
-    
-        }
-    }
-    
-    
-    
+
+     @media screen and (min-width: 450px) {
+         .backgroundimage-positionleft {
+             float: left;
+
+         }
+     }
+
+     @media screen and (min-width: 450px) {
+         .backgroundimage-positionright {
+             float: right;
+
+         }
+     }
+
+
+
 
 
 
@@ -809,7 +823,7 @@
              cursor: pointer;
              overflow-x: hidden;
              margin-bottom: 50px;
-            font-size: 20px;
+             font-size: 20px;
          }
      }
 
@@ -834,45 +848,45 @@
          text-decoration: none;
      }
 
-    @media screen and (max-width: 380px) {
-    .listIcon {
-    width: 5%;
-    float: left;
-    margin-left: 1%;
-    display: none;
-    }
-}
-    @media screen and (max-width: 768px) {
-    .listIcon {
-    width: 5%;
-    float: left;
-    margin-left: 1%;
-    }
-}
-    @media screen and (min-width: 768px) {
-    .listIcon{
-        width: 5%;
-        float: left;
-    }
-}
+     @media screen and (max-width: 380px) {
+         .listIcon {
+             width: 5%;
+             float: left;
+             margin-left: 1%;
+             display: none;
+         }
+     }
 
-    .listName{
-        float:left;
-        width:47%;
-        text-align:left;
-        margin-left:5%;
-    }
+     @media screen and (max-width: 768px) {
+         .listIcon {
+             width: 5%;
+             float: left;
+             margin-left: 1%;
+         }
+     }
 
-    .listAddress{
-        float:left;
-        text-align:left;
-        margin-left:3%;
-    }
+     @media screen and (min-width: 768px) {
+         .listIcon {
+             width: 5%;
+             float: left;
+         }
+     }
+
+     .listName {
+         float: left;
+         width: 47%;
+         text-align: left;
+         margin-left: 5%;
+     }
+
+     .listAddress {
+         float: left;
+         text-align: left;
+         margin-left: 3%;
+     }
 
 
      /* Results table */
-     
-     
 
      @media screen and (min-width: 992px) {
          .resultsTable {
