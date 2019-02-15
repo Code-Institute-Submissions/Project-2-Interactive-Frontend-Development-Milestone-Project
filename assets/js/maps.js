@@ -117,7 +117,6 @@
         }
       };
 
-
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: countries['uk'].zoom,
@@ -194,19 +193,12 @@
         clearMarkers();
         markers = [];
 
-
-
-
         var search = {
 
           bounds: map.getBounds(),
           types: [poi],
 
         };
-
-
-
-
 
         places.nearbySearch(search, function(results, status) {
           if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -238,7 +230,6 @@
         });
       }
 
-
       // Clear marker from map
 
       function clearMarkers() {
@@ -249,7 +240,6 @@
         }
         markers = [];
       }
-
 
       // Set the country restriction based on user input.
       // Also center and zoom the map on the given country.
@@ -389,8 +379,6 @@
           document.getElementById('iw-website-row').style.display = 'none';
         }
       }
-
-
 
       document.getElementById("autocomplete").addEventListener("text", resultsList);
 

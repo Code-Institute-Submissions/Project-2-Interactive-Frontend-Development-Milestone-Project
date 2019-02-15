@@ -23,11 +23,12 @@
 </head>
 
 <body class="body">
-    <header class="header">
+    <header>
         <!-- Navbar -->
-    <nav id="navbar-sticky" class="navbar navbar-default">
-        <div class="container-fluid navbar-background-color">
-            <div class="navbar-header">
+        <nav id="navbar-sticky" class="navbar navbar-default">
+        <div class="row">
+            <div class="col-xs-12">
+                  <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                               <span class="sr-only">Toggle navigation</span>
                               <span class="icon-bar"></span>
@@ -48,14 +49,16 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+             <!--/.navbar-collapse -->
+            </div>
         </div>
         <!-- /.container-fluid -->
-    </nav>
+        </nav>
     </header>
-    <div class="row">
-        <div class="col-xs col-sm col-md col-lg">
-            <section class="beachholiday-backgroundimage">
+    
+    <section class="container-fluid beachholiday-backgroundimage">
+        <div class="row">
+            <div class="col-xs-12">
                 <div class="maplistingbackground">
                     <div class="margins-10px">
                         <div class="container-search">
@@ -179,21 +182,27 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <hr>
+            </div>
+        </div>
+        <hr>
             <!-- list of countries searchable in Europe -->
-            <section id="europe">
-                <div>
+    </section>
+    
+    <section id="europe" class="container-fluid">
+                        <div class="col-xs-12">
                     <h1>Europe</h1>
                 </div>
-                <div class="row border-continentinfo">
-                    <!-- Image displaying Old Town square in prague. Czech Republic -->
-                    <div class="europe-backgroundimage backgroundimage-orientation backgroundimage-positionleft">
+        <div class="row  border-continentinfo">
+            <div class="col-xs-12 col-sm-8">
+                <!-- Image displaying Old Town square in prague. Czech Republic -->
+                                     <div class="europe-backgroundimage backgroundimage-orientation">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Old Town square in prague. Czech Republic</p>
                         </div>
                     </div>
-                    <div class="travellocationslist ">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                                     <div class="travellocationslist ">
                         <h3>Travel locations</h3>
                         <ul>
                             <li>Czech Republic</li>
@@ -204,22 +213,16 @@
                             <li>Uk</li>
                         </ul>
                     </div>
-                </div>
-            </section>
-            <hr>
-            <!-- list of countries searchable in North America -->
-            <section id="northamerica">
-                <div>
-                    <h1>North America</h1>
-                </div>
-                <div class="row border-continentinfo">
-                    <!-- Image displaying Ceiba del mar. Mexico -->
-                    <div class="northamerica-backgroundimage backgroundimage-orientation backgroundimage-positionright">
-                        <div class="imagelocationinfo">
-                            <p class="imagetextposition">Ceiba del mar. Mexico</p>
-                        </div>
-                    </div>
-                    <div class="travellocationslist">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- list of countries searchable in North America -->
+    <section id="northamerica" class="container-fluid">
+        <div class="row  border-continentinfo">
+                        <div class="col-xs-12 col-sm-4">
+                <!-- Image displaying Ceiba del mar. Mexico -->
+                                     <div class="travellocationslist">
                         <h3>Travel locations</h3>
                         <ul>
                             <li>Bahamas</li>
@@ -229,22 +232,34 @@
                             <li>USA</li>
                         </ul>
                     </div>
-                </div>
-            </section>
-            <hr>
-            <!-- list of countries searchable in South America -->
-            <section id="southamerica">
-                <div>
+            </div>
+             <div class="col-xs-12 col-sm-8">
+                                                      <div class="northamerica-backgroundimage backgroundimage-orientation">
+                        <div class="imagelocationinfo">
+                            <p class="imagetextposition">Ceiba del mar. Mexico</p>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <!-- list of countries searchable in South America -->
+    <section id="southamerica" class="container-fluid">
+                        <div>
                     <h1>South America</h1>
                 </div>
-                <div class="row border-continentinfo">
+        <div class="row border-continentinfo">
+             <div class="col-xs-12 col-sm-8">
                     <!-- Image displaying Rio de Janeiro. Brazil -->
-                    <div class="southamerica-backgroundimage backgroundimage-orientation backgroundimage-positionleft">
+                    <div class="southamerica-backgroundimage backgroundimage-orientation">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Rio de Janeiro. Brazil</p>
                         </div>
                     </div>
-                    <div class="travellocationslist ">
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                                     <div class="travellocationslist ">
                         <h3>Travel locations</h3>
                         <ul>
                             <li>Argentina</li>
@@ -254,22 +269,18 @@
                             <li>Uruguay</li>
                         </ul>
                     </div>
-                </div>
-            </section>
-            <hr>
-            <!-- list of countries searchable in Africa -->
-            <section id="africa">
-                <div>
+            </div>
+        </div>
+    </section>
+    <hr>
+        <!-- list of countries searchable in Africa -->
+    <section id="africa" class="container-fluid">
+                        <div>
                     <h1>Africa</h1>
                 </div>
-                <div class="row border-continentinfo">
-                    <!-- Image displaying Clifton, Cape town. South Africa -->
-                    <div class="africa-backgroundimage backgroundimage-orientation backgroundimage-positionright">
-                        <div class="imagelocationinfo">
-                            <p class="imagetextposition">Clifton, Cape town. South Africa</p>
-                        </div>
-                    </div>
-                    <div class="travellocationslist ">
+        <div class="row  border-continentinfo">
+             <div class="col-xs-12 col-sm-4">
+                                     <div class="travellocationslist ">
                         <h3>Travel locations</h3>
                         <ul>
                             <li>Kenya</li>
@@ -280,21 +291,34 @@
                         </ul>
                     </div>
                 </div>
-            </section>
-            <hr>
-            <!-- list of countries searchable in Australia/Oceania -->
-            <section id="australia/oceania">
-                <div>
+            
+            <div class="col-xs-12 col-sm-8">
+                                     <!-- Image displaying Clifton, Cape town. South Africa -->
+                    <div class="africa-backgroundimage backgroundimage-orientation backgroundimage-positionright">
+                        <div class="imagelocationinfo">
+                            <p class="imagetextposition">Clifton, Cape town. South Africa</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+        <!-- list of countries searchable in Australia/Oceania -->
+    <section  id="australia/oceania" class="container-fluid">
+                        <div>
                     <h1>Australia/Oceania</h1>
                 </div>
-                <div class="row border-continentinfo">
-                    <!-- Image displaying Sydney. Australia -->
+        <div class="row border-continentinfo">
+             <div class="col-xs-12 col-sm-8">
+                                     <!-- Image displaying Sydney. Australia -->
                     <div class="australia-backgroundimage backgroundimage-orientation backgroundimage-positionleft">
                         <div class="imagelocationinfo">
                             <p class="imagetextposition">Sydney. Australia</p>
                         </div>
-                    </div>
-                    <div class="travellocationslist ">
+                    </div> 
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                                     <div class="travellocationslist ">
                         <h3>Travel locations</h3>
                         <ul>
                             <li>Australia</li>
@@ -304,9 +328,27 @@
                             <li>Tonga</li>
                         </ul>
                     </div>
-                </div>
-            </section>
-            <hr>
+            </div>
+        </div>
+    </section>
+    <hr>
+        
+    <!--<section class="container-fluid">-->
+    <!--    <div class="row">-->
+    <!--         <div class="col-xs-12 col-sm-4">-->
+    <!--             COUNTRY 2 COLUMN 1 -->
+    <!--        </div>-->
+    <!--        <div class="col-xs-12 col-sm-8">-->
+    <!--             COUNTRY 2 COLUMN 2-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</section>-->
+    
+    
+
+    <div class="row">
+        <div class="col-xs col-sm col-md col-lg">
+
             <!-- mail functionality using emailjs.com -->
             <section id="contact" class="contact-section">
                 <div>

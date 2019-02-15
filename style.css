@@ -5,8 +5,6 @@
          font-family: serif;
      }
 
-     .header {}
-
      .footer {
          min-height: 200px
      }
@@ -43,9 +41,6 @@
     text-decoration: none;
     }
     
-    tr{
-        
-    }
 
      @media screen and (min-width: 768px) and (max-width: 992px) {
          h3 {

@@ -34,7 +34,7 @@ Potential future features.
 1. A website forum allowing people to discuss there holiday experieces with other customers.
 2. Sign in / profile page
 3. Email subscribe list
-4. Google maps APi is limited in a few ways making it impossible to show on multiple place types at one time.
+4. Add Google maps APi function to allow is limited in a few ways making it impossible to show on multiple place types at one time.
 
 
 *-Technologies used-*
