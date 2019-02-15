@@ -478,7 +478,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 150px;
-             min-width: 60%;
+             
              margin: 10px;
          }
      }
@@ -488,7 +488,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 170px;
-             min-width: 60%;
+             
              margin: 10px;
          }
      }
@@ -497,7 +497,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 180px;
-             min-width: 60%;
+             
              margin: 10px;
          }
      }
@@ -506,7 +506,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 200px;
-             min-width: 60%;
+             
              margin: 10px;
          }
      }
@@ -515,7 +515,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 220px;
-             min-width: 60%;
+             
              margin: 10px;
          }
      }
@@ -524,7 +524,7 @@
          .backgroundimage-orientation {
              background-size: cover;
              min-height: 230px;
-             min-width: 60%;
+             
              margin: 10px;
          }
      }
@@ -535,7 +535,7 @@
              min-height: 200px;
              background-size: cover;
              margin: 5%;
-             width: 60%;
+             
          }
      }
 
@@ -545,7 +545,7 @@
              min-height: 250px;
              background-size: cover;
              margin: 5%;
-             width: 60%;
+             
          }
      }
 
@@ -554,7 +554,7 @@
              min-height: 300px;
              background-size: cover;
              margin: 5%;
-             width: 60%;
+             
          }
      }
 
@@ -563,7 +563,7 @@
              min-height: 330px;
              background-size: cover;
              margin: 5%;
-             width: 60%;
+             
          }
      }
 
@@ -572,7 +572,7 @@
              min-height: 350px;
              background-size: cover;
              margin: 5%;
-             width: 60%;
+             
          }
      }
 
