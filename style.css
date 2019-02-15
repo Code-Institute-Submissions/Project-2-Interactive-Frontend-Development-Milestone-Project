@@ -75,6 +75,10 @@
          margin-left: 0px;
          margin-bottom: 10px;
      }
+     
+     .padding0px{
+         padding: 0px;
+     }
 
      .border-continentinfo {
          margin-right: 0px;
