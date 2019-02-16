@@ -58,14 +58,14 @@
                 <div class="maplistingbackground">
                     <div class="margins-10px">
                         <div style="margin-top: -20px;">
-                                <h1>Travel search</h1>
-                                <div id="searchresults">
-                                    Search for a place (example city, town or postcode )
-                                </div>
-                                <input id="autocomplete" type="text" placeholder="Start typing here" name="answer" onchange="resultsList()" />
-                                <!-- List of selectable countries -->
-                                <div id="controls">
-                                    <select id="country">
+                            <h1>Travel search</h1>
+                            <div id="searchresults">
+                                Search for a place (example city, town or postcode )
+                            </div>
+                            <input id="autocomplete" type="text" placeholder="Start typing here" name="answer" onchange="resultsList()" />
+                            <!-- List of selectable countries -->
+                            <div id="controls">
+                                <select id="country">
                                         <option value="ar">Argentina</option>
                                         <option value="au">Australia</option>
                                         <option value="ba">Bahamas</option>
@@ -94,7 +94,7 @@
                                         <option value="us">U.S.A.</option>
                                         <option value="zi">Zimbabwe</option>
                                   </select>
-                                </div>
+                            </div>
                         </div>
                         <!-- marker location information -->
                         <div style="display: none">
@@ -126,53 +126,61 @@
                         <!-- place type search  -->
                         <div id="placestoggle" class="pac-controls" style="margin-top: 10px;">
                             <div id="places"></div>
-                            <!-- Google maps only allows you to search for one place type at a time  -->
-                            <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" disabled />
-                            <label for="lodging">Hotels</label>
-
-                            <input onchange="search()" type="radio" id="art_gallery" name="option" disabled />
-                            <label for="art_gallery">Art Galleries</label>
-
-                            <input onchange="search()" type="radio" id="museum" name="option" disabled />
-                            <label for="museum">Museums</label>
-
-                            <input onchange="search()" type="radio" id="bar" name="option" disabled />
-                            <label for="bar">Bars</label>
-
-                            <input onchange="search()" type="radio" id="restaurant" name="option" disabled />
-                            <label for="restaurant">Restaurants</label>
-
-                            <input onchange="search()" type="radio" id="cafe" name="option" disabled />
-                            <label for="cafe">Cafes</label>
-
-                            <input onchange="search()" type="radio" id="movie_theater" name="option" disabled />
-                            <label for="movie_theater">Movie Theater</label>
+                            <div>
+                                <!-- Google maps only allows you to search for one place type at a time  -->
+                                <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" disabled />
+                                <label for="lodging">Hotels</label>
+                            </div>
+                            <div class="mobile-place-layout">
+                                <input onchange="search()" type="radio" id="art_gallery" name="option" disabled />
+                                <label for="art_gallery">Art Galleries</label>
+                            </div>
+                            <div class="mobile-place-layout">
+                                <input onchange="search()" type="radio" id="museum" name="option" disabled />
+                                <label for="museum">Museums</label>
+                            </div>
+                            <div class="mobile-place-layout">
+                                <input onchange="search()" type="radio" id="bar" name="option" disabled />
+                                <label for="bar">Bars</label>
+                            </div>
+                            <div class="mobile-place-layout">
+                                <input onchange="search()" type="radio" id="restaurant" name="option" disabled />
+                                <label for="restaurant">Restaurants</label>
+                            </div>
+                            <div class="mobile-place-layout">
+                                <input onchange="search()" type="radio" id="cafe" name="option" disabled />
+                                <label for="cafe">Cafes</label>
+                            </div>
+                            <div class="mobile-place-layout">
+                                <input onchange="search()" type="radio" id="movie_theater" name="option" disabled />
+                                <label for="movie_theater">Movie Theater</label>
+                            </div>
                         </div>
                     </div>
-                        <div style="width: 100%;">
-                            <!-- Map -->
-                            <div id="map" class="mapscontainer mapwidth"></div>
-                            <!-- list of search results -->
-                            <div class="listspan resultslist" data-toggle="collapse" data-target="#listing" style="width:100%;min-height:0px;">
-                                <details>
-                                    <summary id="listexpand" style="background-color:antiquewhite;border:none;display:none">Results List</summary>
-                                    <h2 class="listIcon">Icon</h2>
-                                    <h2 class="listName">Name</h2>
-                                    <h2 class="listAddress">Address</h2>
-                                </details>
-                            </div>
-                            <div id="hidden_div" style="">
-
-                            </div>
-                            <a href="#searchresults" class="searchresults">
-                                <div class="collapse navbar-collapse-custom listing col-sm-percent myBox" id="listing">
-                                    <table class="resultsTable">
-                                        <tbody id="results">
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </a>
+                    <div style="width: 100%;">
+                        <!-- Map -->
+                        <div id="map" class="mapscontainer mapwidth"></div>
+                        <!-- list of search results -->
+                        <div class="listspan resultslist" data-toggle="collapse" data-target="#listing" style="width:100%;min-height:0px;">
+                            <details>
+                                <summary id="listexpand" style="background-color:antiquewhite;border:none;display:none">Results List</summary>
+                                <h2 class="listIcon">Icon</h2>
+                                <h2 class="listName">Name</h2>
+                                <h2 class="listAddress">Address</h2>
+                            </details>
                         </div>
+                        <div id="hidden_div" style="">
+
+                        </div>
+                        <a href="#searchresults" class="searchresults">
+                            <div class="collapse navbar-collapse-custom listing col-sm-percent myBox" id="listing">
+                                <table class="resultsTable">
+                                    <tbody id="results">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

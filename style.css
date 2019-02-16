@@ -141,6 +141,11 @@
      #country {
          width: 100%;
      }
+@media screen and (max-width:576px){
+     mobile-place-layout {
+         width: 100%;
+     }
+     }
 
      @media screen and (max-width: 993px) {
          .placeIcon {
@@ -970,3 +975,4 @@
          top: 2px;
          left: 2px;
      }
+     
