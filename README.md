@@ -14,9 +14,6 @@ The process for designing this website began my searching [1] and [2] for design
 Other website I looked at for design ideas
 https://www.w3schools.com/ (used as a reference for basic commands)
 
-
-
-
 Place Types
 https://developers.google.com/places/supported_types#table3
 
@@ -34,7 +31,7 @@ Potential future features.
 1. A website forum allowing people to discuss there holiday experieces with other customers.
 2. Sign in / profile page
 3. Email subscribe list
-4. Add Google maps APi function to allow is limited in a few ways making it impossible to show on multiple place types at one time.
+4. Add Google maps APi function to show multiple place types at one time.
 
 
 *-Technologies used-*
@@ -57,11 +54,23 @@ o	JQuery is used to provide DOM manipulation.
 I’ve tested the code in chrome, Firefox, Microsoft edge browser and safari as well as the mobile versions of these browsers.
 I used W3C for CSS https://jigsaw.w3.org/css-validator/and HTML https://validator.w3.org/ to remove errors.
 The email.js code in the booking form has been tested and functions properly.
-The Google Maps API has been setup to search for cities, towns & postcodes. 
+The Google Maps API has been tested to search for cities, towns & postcodes. 
+The expand and collapse functionality have all been tested.
+The maps country selection and radio button selection has been tested.
+The navbar is functionality works.
 
 
 *-Code Deployment-*
 
+The project is pushed to github
+process used -
+link cloud9 to github
+git remote add origin https://github.com/GrantMCA93/Project-2-Interactive-Frontend-Development-Milestone-Project.git
+git add .
+git commit -m "" <-- in quote marks describe changes made -->
+git push -u origin master
+
+The projects is hosted on Github pages
 
 *-Credits-*
 

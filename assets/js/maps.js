@@ -3,7 +3,9 @@
       var autocomplete;
       var MARKER_PATH = 'http://maps.google.com/mapfiles/kml/paddle/';
       var hostnameRegexp = new RegExp('^https?://.+?/');
-
+      var google;
+      var poi;
+      
       var countries = {
         'all': {
           center: { lat: 54.8, lng: -4.6 },
@@ -15,6 +17,7 @@
         },
         'au': {
           center: { lat: -25.3, lng: 133.8 },
+          
           zoom: 3.6
         },
         'ba': {

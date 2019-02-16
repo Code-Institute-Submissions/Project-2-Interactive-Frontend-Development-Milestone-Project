@@ -141,16 +141,16 @@
      #country {
          width: 100%;
      }
-     
-     .br-on-mobile {
-    display: -webkit-box;
-}
 
-@media screen and (min-width:576px) {
-    .br-on-mobile {
-        display: -webkit-inline-box;
-    }
-}
+     .br-on-mobile {
+         display: -webkit-box;
+     }
+
+     @media screen and (min-width:576px) {
+         .br-on-mobile {
+             display: -webkit-inline-box;
+         }
+     }
 
 
      @media screen and (max-width: 993px) {
@@ -981,4 +981,3 @@
          top: 2px;
          left: 2px;
      }
-     
