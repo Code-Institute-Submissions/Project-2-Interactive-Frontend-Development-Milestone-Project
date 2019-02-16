@@ -1,11 +1,14 @@
       var map, places, infoWindow;
       var markers = [];
       var autocomplete;
-      var countryRestrict = { 'country': 'uk' };
       var MARKER_PATH = 'http://maps.google.com/mapfiles/kml/paddle/';
       var hostnameRegexp = new RegExp('^https?://.+?/');
 
       var countries = {
+        'all': {
+          center: { lat: 54.8, lng: -4.6 },
+          zoom: 1
+        },
         'ar': {
           center: { lat: -35.3, lng: -64.9 },
           zoom: 3.4
@@ -119,8 +122,8 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: countries['uk'].zoom,
-          center: countries['uk'].center,
+          zoom: countries['all'].zoom,
+          center: countries['all'].center,
           mapTypeControl: false,
           panControl: false,
           zoomControl: false,
@@ -139,7 +142,7 @@
           /** @type {!HTMLInputElement} */
           (
             document.getElementById('autocomplete')), {
-            componentRestrictions: countryRestrict
+            types: ['(cities)']
           });
         places = new google.maps.places.PlacesService(map);
 
@@ -274,12 +277,12 @@
         tr.onclick = function() {
           google.maps.event.trigger(markers[i], 'click');
         };
-        
-       
+
+
         var iconTd = document.createElement('td');
         var nameTd = document.createElement('td');
         var addressTd = document.createElement('td');
-        
+
         var icon = document.createElement('img');
         icon.src = markerIcon;
         icon.setAttribute('class', 'placeIcon');
@@ -385,10 +388,5 @@
       function resultsList() {
         document.getElementById("autocomplete");
         document.getElementById("listexpand").style.display = "block";
-        
+
       }
-
-      
-
-      
-      
