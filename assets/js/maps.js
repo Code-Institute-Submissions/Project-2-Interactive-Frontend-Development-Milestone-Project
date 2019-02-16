@@ -7,7 +7,7 @@
       var countries = {
         'all': {
           center: { lat: 54.8, lng: -4.6 },
-          zoom: 2
+          zoom: 2.3
         },
         'ar': {
           center: { lat: -35.3, lng: -64.9 },
