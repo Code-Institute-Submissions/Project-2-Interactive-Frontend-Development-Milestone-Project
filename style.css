@@ -141,11 +141,17 @@
      #country {
          width: 100%;
      }
-@media screen and (max-width:576px){
-     mobile-place-layout {
-         width: 100%;
-     }
-     }
+     
+     .br-on-mobile {
+    display: -webkit-box;
+}
+
+@media screen and (min-width:576px) {
+    .br-on-mobile {
+        display: -webkit-inline-box;
+    }
+}
+
 
      @media screen and (max-width: 993px) {
          .placeIcon {
